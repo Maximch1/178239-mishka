@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">HTML Academy: Мишка</h1>
+    <div class="logo">
+      <a href="index.html">
+        <img src="http://placehold.it/86*35" alt="Логотип Мишка" class="logo__img" width="86" height="35">
+      </a>
+    </div>
+    <nav class="menu">
+      <div class="menu__wrapper container">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-header container">
+      <h1 class="page-header__title">Вязание на заказ</h1>
+      <p class="page-header__desc">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+    </div>
+    <section class="order container">
+      <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="order__group order__group--type">
+          <p class="order__title">Тип</p>
+          <div class="order__block">
+            <input type="radio" name="order-type" id="order-type_1" value="accessory" checked>
+            <label class="order__type-desc" for="order-type_1">Аксессуар для интерьера</label>
+          </div>
+          <div class="order__block">
+            <input type="radio" name="order-type" id="order-type_2" value="toy">
+            <label class="order__type-desc" for="order-type_2">Детская игрушка</label>
+          </div>
+        </div>
+        <div class="order__group order__group--color">
+          <p class="order__title">Цвет</p>
+          <div class="order__group-color">
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_1" value="white" checked>
+              <label class="order__color-desc" for="order-color_1">Белый</label>
+            </div>
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_2" value="gray" checked>
+              <label class="order__color-desc" for="order-color_2">Серый</label>
+            </div>
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_3" value="tiffany">
+              <label class="order__color-desc" for="order-color_3">«Тиффани»</label>
+            </div>
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_4" value="black">
+              <label class="order__color-desc" for="order-color_4">Черный</label>
+            </div>
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_5" value="pink">
+              <label class="order__color-desc" for="order-color_5">Розовый</label>
+            </div>
+            <div class="order__block">
+              <input type="checkbox" name="order-color" id="order-color_6" value="orange">
+              <label class="order__color-desc" for="order-color_6">Оранжевый</label>
+            </div>
+          </div>
+        </div>
+        <div class="order__group order__group--name">
+          <p class="order__title">ФИО</p>
+          <div class="order__block">
+            <label class="order__name" for="order-name">Имя:</label>
+            <input type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
+          </div>
+          <div class="order__block">
+            <label class="order__surname" for="order-surname">Фамилия:</label>
+            <input type="text" name="order-surname" id="order-surname" placeholder="Укажите фамилию*">
+          </div>
+          <div class="order__block">
+            <label class="order__patronymic" for="order-patronymic">Отчество:</label>
+            <input type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+        <div class="order__group order__group--tel">
+          <p class="order__title">Тел</p>
+          <div class="order__block">
+            <label class="order__tel visually-hidden" for="order-tel">Телефон:</label>
+            <input type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
+            <svg>
+
+            </svg>
+          </div>
+        </div>
+        <div class="order__group order__group--mail">
+          <p class="order__title">E-mail</p>
+          <div class="order__block">
+            <label class="order__mail visually-hidden" for="order-mail">E-mail:</label>
+            <input type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
+            <svg>
+
+            </svg>
+          </div>
+        </div>
+        <div class="order__group order__group--additional">
+          <p class="order__title">Доп</p>
+          <div class="order__block">
+            <label class="order__additional visually-hidden" for="order-additional">Доп:</label>
+            <textarea name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </div>
+        <div class="order__group order__group--btn">
+          <p class="order__more">*Поля обязательны для заполнения</p>
+          <button class="btn order__btn" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a href="#" class="social-link social-link--inst">
+        <svg></svg>
+      </a>
+      <a href="#" class="social-link social-link--fb">
+        <svg></svg>
+      </a>
+      <a href="#" class="social-link social-link--tweet">
+        <svg></svg>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
