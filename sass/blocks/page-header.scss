@@ -1,0 +1,12 @@
+.page-header {
+  @include container;
+}
+
+.page-header__logo {
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  min-height: 79px;
+  border-bottom: 1px solid $pheader-logo;
+}

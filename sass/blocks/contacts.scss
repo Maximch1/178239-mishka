@@ -1,0 +1,54 @@
+.contacts {
+  @include container;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts > a {
+  padding: 0 30px;
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  @include font-sans-bold(18px,30px);
+}
+
+.contacts__table {
+  display: table;
+  @include font-sans(15px,30px,$contacts-table);
+}
+
+.contacts__table ul {
+  display: table-row;
+}
+
+.contacts__table li {
+  display: table-cell;
+  &:first-child {
+    width: 78px;
+    height: 58px;
+    text-transform: lowercase;
+  }
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: $contacts-table;
+  border-bottom: 1px solid $contacts-email;
+}
+
+.contact__map {
+  overflow: hidden;
+  padding: 0;
+}
+
+
+
+
+
+
+
+

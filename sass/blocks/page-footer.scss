@@ -1,0 +1,7 @@
+.page-footer {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  background-color: $pfooter-background;
+}
+

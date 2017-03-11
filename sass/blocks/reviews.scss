@@ -1,0 +1,27 @@
+.reviews {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.reviews__title {
+  @include font-sans-bold(25px,30px);
+}
+
+.reviews__content {
+  margin: 0;
+}
+
+.reviews__text {
+  @include font-sans(15px,30px,$reviews-text);
+}
+
+.reviews__author-name {
+  @include font-sans-bold(18px,24px);
+}
+
+.reviews__author-link {
+  @include font-sans(18px,30px,$reviews-text);
+  text-decoration: none;
+}

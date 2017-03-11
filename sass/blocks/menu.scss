@@ -1,0 +1,6 @@
+.menu {
+  //display: none;
+  @include container;
+  position: absolute;
+  z-index: 50;
+}
