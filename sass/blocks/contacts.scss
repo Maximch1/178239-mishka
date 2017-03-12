@@ -2,10 +2,13 @@
   @include container;
   display: flex;
   flex-direction: column;
+  margin-bottom: 39px;
 }
 
-.contacts > a {
-  padding: 0 30px;
+.contact__btn {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__wrapper {
@@ -14,11 +17,14 @@
 
 .contacts__title {
   @include font-sans-bold(18px,30px);
+  margin-bottom: 25px;
 }
 
 .contacts__table {
   display: table;
   @include font-sans(15px,30px,$contacts-table);
+  border-collapse: collapse;
+  margin-bottom: 35px;
 }
 
 .contacts__table ul {
@@ -35,7 +41,6 @@
 }
 
 .contacts__email {
-  text-decoration: none;
   color: $contacts-table;
   border-bottom: 1px solid $contacts-email;
 }
@@ -43,6 +48,8 @@
 .contact__map {
   overflow: hidden;
   padding: 0;
+  height: 457px;
+  margin-bottom: 39px;
 }
 
 

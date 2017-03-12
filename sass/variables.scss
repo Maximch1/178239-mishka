@@ -24,16 +24,28 @@ $viking-color: #59d5bc;
 
 //Глобальные переменные
 
+//menu
+$menu-border: $gallery-color;
+$menu-background: $white-color;
+$menu-color: $black-color;
+
 //products
 $products-background-color: $alabaster-color;
 $prod-interior-background-color: $downy-color;
 $prod-toys-background-color: $fountain-blue-color;
+
+//products-view
+$prod-view-subtitle-color: $downy-color;
+$prod-view-color: $tundora-color;
+$prod-view-table: $gallery-color;
 
 //page-header
 $pheader-logo: $gallery-color;
 
 //reviews
 $reviews-text: $tundora-color;
+$reviews-btn-background: $white-color;
+$reviews-btn-border: $gallery-color;
 
 //contacts
 $contacts-table: $tundora-color;
@@ -42,8 +54,13 @@ $contacts-email: $downy-color;
 //page-footer
 $pfooter-background: $seashell-color;
 
+//btn
+$btn-color: $tundora-color;
+$btn-hover-color: $white-color;
+$btn-hover-background: $tundora-color;
 
-
+//copyright
+$copyright-color: $black-color;
 
 
 

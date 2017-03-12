@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  width: 100%;
+  @include font-sans-bold(17px,16px,$btn-color);
+  text-transform: uppercase;
+  outline: none;
+  text-align: center;
+  border: 2px solid $btn-color;
+  padding: 16px 0;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $btn-hover-background;
+    color: $btn-hover-color;
+  }
+
+  &:active {
+    color: rgba($white-color, 0.4);
+  }
+
+}
