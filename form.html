@@ -8,39 +8,40 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">HTML Academy: Мишка</h1>
-      <div class="page-header__logo logo">
+      <div class="page-header__logo">
         <a href="index.html">
-          <img class="logo__img" src="http://placehold.it/86*35" alt="Логотип Мишка" width="86" height="35">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="logo__img" width="86" height="35">
         </a>
+        <button class="menu__button" type="button">открыть_меню</button>
       </div>
       <nav class="menu">
-        <div class="menu__wrapper container">
-          <ul class="menu__items">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Каталог товаров</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Вязание на заказ</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Поиск по сайту</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div class="page-header container">
-        <h1 class="page-header__title">Вязание на заказ</h1>
-        <p class="page-header__desc">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-          заказа и мы свяжемся с вами, чтобы уточнить детали.
+      <section class="subject">
+        <div class="subject__wrapper">
+          <h2 class="subject__title">Вязание на заказ</h2>
+        </div>
+      </section>
+      <div class="order">
+        <p class="order__desc">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-      </div>
-      <div class="order container">
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="order__group order__group--type">
             <p class="order__title">Тип</p>
@@ -132,21 +133,21 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="social container">
-        <a href="#" class="social__link social__link--inst">
-          <svg></svg>
+      <div class="social">
+        <a href="#" class="social__link social__link--insta">
+          <svg width="21" height="22"></svg>
         </a>
         <a href="#" class="social__link social__link--fb">
-          <svg></svg>
+          <svg width="15" height="29"></svg>
         </a>
-        <a href="#" class="social__link social__link--tweet">
-          <svg></svg>
+        <a href="#" class="social__link social__link--twitter">
+          <svg width="24" height="20"></svg>
         </a>
       </div>
       <div class="copyright">
         <a href="#" class="copyright__link">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon"></svg>
+          <svg class="copyright__icon" width="27" height="34"></svg>
         </a>
       </div>
     </footer>

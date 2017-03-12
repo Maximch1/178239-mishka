@@ -1,0 +1,14 @@
+.subject {
+  margin-bottom: 29px;
+}
+
+.subject__wrapper {
+  @include container;
+  background-color: $subject-background;
+  padding: 70px 0 76px;
+}
+
+.subject__title {
+  @include font-sans-bold(27px,30px);
+  text-align: center;
+}

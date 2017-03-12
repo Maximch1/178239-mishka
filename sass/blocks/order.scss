@@ -1,0 +1,22 @@
+.order {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.order__desc {
+  @include font-sans(13px,24px);
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
