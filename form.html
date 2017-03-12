@@ -84,45 +84,41 @@
             </div>
           </div>
           <div class="order__group order__group--name">
-            <p class="order__title">ФИО</p>
-            <div class="order__block">
-              <label class="order__name" for="order-name">Имя:</label>
-              <input type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
+            <p class="order__title order__title--name">ФИО</p>
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-name">Имя:</label>
+              <input class="order__input-text" type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
             </div>
-            <div class="order__block">
-              <label class="order__surname" for="order-surname">Фамилия:</label>
-              <input type="text" name="order-surname" id="order-surname" placeholder="Укажите фамилию*">
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-surname">Фамилия:</label>
+              <input class="order__input-text" type="text" name="order-surname" id="order-surname" placeholder="Укажите фамилию*">
             </div>
-            <div class="order__block">
-              <label class="order__patronymic" for="order-patronymic">Отчество:</label>
-              <input type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-patronymic">Отчество:</label>
+              <input class="order__input-text" type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
             </div>
           </div>
           <div class="order__group order__group--tel">
-            <p class="order__title">Тел</p>
+            <p class="order__title order__title--light">Тел</p>
             <div class="order__block">
-              <label class="order__tel visually-hidden" for="order-tel">Телефон:</label>
-              <input type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
-              <svg>
-
-              </svg>
+              <label class="order__input visually-hidden" for="order-tel">Телефон:</label>
+              <input class="order__input-text" type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
+              <!--<svg></svg>-->
             </div>
           </div>
           <div class="order__group order__group--mail">
-            <p class="order__title">E-mail</p>
+            <p class="order__title order__title--light">E-mail</p>
             <div class="order__block">
-              <label class="order__mail visually-hidden" for="order-mail">E-mail:</label>
-              <input type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
-              <svg>
-
-              </svg>
+              <label class="order__input visually-hidden" for="order-mail">E-mail:</label>
+              <input class="order__input-text" type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
+              <!--<svg></svg>-->
             </div>
           </div>
           <div class="order__group order__group--additional">
-            <p class="order__title">Доп</p>
-            <div class="order__block">
+            <p class="order__title order__title--additional">Доп</p>
+            <div class="order__block order__block--additional">
               <label class="order__additional visually-hidden" for="order-additional">Доп:</label>
-              <textarea name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order__input-text order__input-text--textarea" name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
           <div class="order__group order__group--btn">
