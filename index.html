@@ -8,13 +8,13 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">HTML Academy: Мишка</h1>
-      <div class="logo">
+      <div class="page-header__logo">
         <a href="index.html">
-          <img src="http://placehold.it/86*35" alt="Логотип Мишка" class="logo__img" width="86" height="35">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="logo__img" width="86" height="35">
         </a>
+        <button class="menu__button" type="button">открыть_меню</button>
       </div>
       <nav class="menu">
-        <div class="menu__wrapper container">
           <ul class="menu__items">
             <li class="menu__item">
               <a href="#" class="menu__link">Каталог товаров</a>
@@ -29,24 +29,29 @@
               <a href="#" class="menu__link">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
     <main>
-      <section class="products container">
+      <section class="products">
         <div class="products__image">
-          <h2 class="products__title">Милые штуки ручной работы для дома</h2>
+          <h2 class="products__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         </div>
         <div class="products__list">
           <div class="products__block products__block--interior">
-            <a href="#" class="products__link">Предметы интерьера</a>
+            <a class="products__link" href="#">
+              <span>Предметы интерьера</span>
+              <img class="products__icon products__icon--interior" src="img/icon-interior.svg" width="41" height="62" alt="Предметы интерьера">
+            </a>
           </div>
           <div class="products__block products__block--toys">
-            <a href="#" class="products__link">Детские игрушки</a>
+            <a class="products__link" href="#">
+              <span>Детские игрушки</span>
+              <img class="products__icon products__icon--toys" src="img/icon-toy.svg" width="60" height="61" alt="Предметы интерьера">
+            </a>
           </div>
         </div>
       </section>
-      <section class="products-view container">
+      <section class="products-view">
         <div class="products-view__header">
           <h2 class="products-view__title">Вязаные корзинки</h2>
           <p class="products-view__subtitle">Товар недели</p>
@@ -71,7 +76,7 @@
           </div>
           <div class="products-view__picture">
             <picture>
-              <img src="http://placehold.it/260*315" alt="Вязаные корзинки" class="products-view__img" width="260" height="315">
+              <img class="products-view__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
             </picture>
           </div>
           <div class="product-view__footer">
@@ -80,8 +85,8 @@
           </div>
         </div>
       </section>
-      <section class="about container">
-        <h2 class="about__title">Коротко о нас</h2>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__features">
           <li class="about__item about__item--1">Экологически чистые материалы</li>
           <li class="about__item about__item--2">Скандинавский стиль по российской цене</li>
@@ -106,8 +111,14 @@
         </blockquote>
         <div class="reviews_controls">
           <button class="reviews__control-btn reviews__control-btn--prev">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+            <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+            </svg>
           </button>
           <button class="reviews__control-btn reviews__control-btn--next">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+            <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+            </svg>
           </button>
         </div>
         <a href="#" class="btn reviews_btn">Написать</a>
@@ -122,34 +133,34 @@
             </ul>
             <ul>
               <li>адрес:</li>
-              <li>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
+              <li>г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</li>
             </ul>
           </div>
         </div>
         <div class="contact__map">
           <picture>
-            <img src="http://placehold.it/320*457" alt="Карта" class="contact__img">
+            <img src="img/map-mobile@1x.jpg" alt="Карта" class="contact__img">
           </picture>
         </div>
         <a href="#" class="btn contact__btn">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="social container">
-        <a href="#" class="social__link social__link--inst">
-          <svg></svg>
+      <div class="social">
+        <a href="#" class="social__link social__link--insta">
+          <svg width="21" height="22"></svg>
         </a>
         <a href="#" class="social__link social__link--fb">
-          <svg></svg>
+          <svg width="15" height="29"></svg>
         </a>
-        <a href="#" class="social__link social__link--tweet">
-          <svg></svg>
+        <a href="#" class="social__link social__link--twitter">
+          <svg width="24" height="20"></svg>
         </a>
       </div>
       <div class="copyright">
         <a href="#" class="copyright__link">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon"></svg>
+          <svg class="copyright__icon" width="27" height="34"></svg>
         </a>
       </div>
     </footer>

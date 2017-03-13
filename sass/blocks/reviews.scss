@@ -1,0 +1,51 @@
+.reviews {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin-bottom: 86px;
+
+}
+
+.reviews__title {
+  @include font-sans-bold(25px,30px);
+  margin-bottom: 24px;
+}
+
+.reviews__content {
+  margin: 0 0 30px 0;
+}
+
+.reviews__text {
+  @include font-sans(15px,30px,$reviews-text);
+  margin-bottom: 26px;
+}
+
+.reviews__author-name {
+  @include font-sans-bold(18px,24px);
+}
+
+.reviews__author-link {
+  @include font-sans(18px,30px,$reviews-text);
+}
+
+.reviews_controls {
+  font-size: 0;
+  margin-bottom: 38px;
+}
+
+.reviews__control-btn {
+  display: inline-block;
+  width: 130px;
+  height: 52px;
+  background-color: $reviews-btn-background;
+  border: 1px solid $reviews-btn-border;
+
+  &--prev {
+    border-right: none;
+  }
+}
+
+
+
+

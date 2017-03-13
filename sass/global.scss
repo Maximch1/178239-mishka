@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0;
+  color: $black-color;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+picture {
+  font-size: 0;
+}

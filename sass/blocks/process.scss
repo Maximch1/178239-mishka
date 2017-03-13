@@ -1,0 +1,63 @@
+.process {
+  @include container;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 58px;
+}
+
+.process__header {
+  border: 1px solid $process-border;
+  padding: 23px;
+  padding-left: 89px;
+  position: relative;
+  //background: url(/img/icon-video.svg) no-repeat 30px 30px;
+}
+
+.process__title {
+  @include font-sans-bold(17px,24px);
+}
+
+.process__img {
+  width: 260px;
+  height: 150px;
+  background: $process-background;
+}
+
+.process__video {
+  position: relative;
+  font-size: 0;
+}
+
+.process__btn-play {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  background: url(/img/icon-play.svg) no-repeat 50% 50%;
+  width: 101px;
+  height: 76px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.process__footer {
+  padding: 26px 33px 33px;
+  border: 1px solid $process-background;
+  display: flex;
+  flex-direction: column;
+}
+
+.process__desc {
+  @include font-sans(13px,24px,$process-color);
+  margin-bottom: 25px;
+}
+
+.process__header svg {
+  position: absolute;
+  top: 28px;
+  left: 33px;
+  width: 32px;
+  height: 32px;
+  fill: $process-icon-color;
+}

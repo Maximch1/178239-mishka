@@ -8,39 +8,40 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">HTML Academy: Мишка</h1>
-      <div class="logo">
+      <div class="page-header__logo">
         <a href="index.html">
-          <img src="http://placehold.it/86*35" alt="Логотип Мишка" class="logo__img" width="86" height="35">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="logo__img" width="86" height="35">
         </a>
+        <button class="menu__button" type="button">открыть_меню</button>
       </div>
       <nav class="menu">
-        <div class="menu__wrapper container">
-          <ul class="menu__items">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Каталог товаров</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Вязание на заказ</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Поиск по сайту</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div class="page-header container">
-        <h1 class="page-header__title">Вязание на заказ</h1>
-        <p class="page-header__desc">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-          заказа и мы свяжемся с вами, чтобы уточнить детали.
+      <section class="subject">
+        <div class="subject__wrapper">
+          <h2 class="subject__title">Вязание на заказ</h2>
+        </div>
+      </section>
+      <div class="order">
+        <p class="order__desc">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-      </div>
-      <div class="order container">
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="order__group order__group--type">
             <p class="order__title">Тип</p>
@@ -83,45 +84,41 @@
             </div>
           </div>
           <div class="order__group order__group--name">
-            <p class="order__title">ФИО</p>
-            <div class="order__block">
-              <label class="order__name" for="order-name">Имя:</label>
-              <input type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
+            <p class="order__title order__title--name">ФИО</p>
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-name">Имя:</label>
+              <input class="order__input-text" type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
             </div>
-            <div class="order__block">
-              <label class="order__surname" for="order-surname">Фамилия:</label>
-              <input type="text" name="order-surname" id="order-surname" placeholder="Укажите фамилию*">
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-surname">Фамилия:</label>
+              <input class="order__input-text" type="text" name="order-surname" id="order-surname" placeholder="Укажите фамилию*">
             </div>
-            <div class="order__block">
-              <label class="order__patronymic" for="order-patronymic">Отчество:</label>
-              <input type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
+            <div class="order__block order__block--name">
+              <label class="order__input" for="order-patronymic">Отчество:</label>
+              <input class="order__input-text" type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
             </div>
           </div>
           <div class="order__group order__group--tel">
-            <p class="order__title">Тел</p>
+            <p class="order__title order__title--light">Тел</p>
             <div class="order__block">
-              <label class="order__tel visually-hidden" for="order-tel">Телефон:</label>
-              <input type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
-              <svg>
-
-              </svg>
+              <label class="order__input visually-hidden" for="order-tel">Телефон:</label>
+              <input class="order__input-text" type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
+              <!--<svg></svg>-->
             </div>
           </div>
           <div class="order__group order__group--mail">
-            <p class="order__title">E-mail</p>
+            <p class="order__title order__title--light">E-mail</p>
             <div class="order__block">
-              <label class="order__mail visually-hidden" for="order-mail">E-mail:</label>
-              <input type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
-              <svg>
-
-              </svg>
+              <label class="order__input visually-hidden" for="order-mail">E-mail:</label>
+              <input class="order__input-text" type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
+              <!--<svg></svg>-->
             </div>
           </div>
           <div class="order__group order__group--additional">
-            <p class="order__title">Доп</p>
-            <div class="order__block">
+            <p class="order__title order__title--additional">Доп</p>
+            <div class="order__block order__block--additional">
               <label class="order__additional visually-hidden" for="order-additional">Доп:</label>
-              <textarea name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order__input-text order__input-text--textarea" name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
           <div class="order__group order__group--btn">
@@ -132,21 +129,21 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="social container">
-        <a href="#" class="social__link social__link--inst">
-          <svg></svg>
+      <div class="social">
+        <a href="#" class="social__link social__link--insta">
+          <svg width="21" height="22"></svg>
         </a>
         <a href="#" class="social__link social__link--fb">
-          <svg></svg>
+          <svg width="15" height="29"></svg>
         </a>
-        <a href="#" class="social__link social__link--tweet">
-          <svg></svg>
+        <a href="#" class="social__link social__link--twitter">
+          <svg width="24" height="20"></svg>
         </a>
       </div>
       <div class="copyright">
         <a href="#" class="copyright__link">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon"></svg>
+          <svg class="copyright__icon" width="27" height="34"></svg>
         </a>
       </div>
     </footer>

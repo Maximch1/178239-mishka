@@ -1,0 +1,9 @@
+.copyright {
+  padding: 28px 0 32px;
+  width: 185px;
+  margin: 0 auto;
+}
+
+.copyright__text {
+  @include font-sans-bold(19px,18px,$copyright-color);
+}
