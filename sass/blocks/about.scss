@@ -8,7 +8,6 @@
 
 .about__title {
   @include font-sans-bold(25px,30px);
-
  }
 
 .about__features {
@@ -35,5 +34,23 @@
   }
   &--6 {
     background: transparent url("../img/icon-feature-6.svg") no-repeat 3px 8px;
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .about__title {
+    @include font-sans-bold(43px,50px);
+  }
+
+  .about__features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    @include font-sans-bold(20px,24px);
+    width: 50%;
   }
 }

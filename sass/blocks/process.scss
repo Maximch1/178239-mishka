@@ -31,8 +31,11 @@
 
 .process__btn-play {
   position: absolute;
-  top: 40px;
-  left: 80px;
+  //top: 40px;
+  //left: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   background: url(/img/icon-play.svg) no-repeat 50% 50%;
   width: 101px;
   height: 76px;
@@ -60,4 +63,43 @@
   width: 32px;
   height: 32px;
   fill: $process-icon-color;
+}
+
+
+@media #{$tablet-widths} {
+  .process {
+    width: 668px;
+    padding: 0;
+
+  }
+
+  .process__video {
+    order: -1;
+  }
+
+  .process__title {
+    @include font-sans-bold(20px,24px);
+  }
+
+  .process__header {
+    border-bottom: none;
+    padding: 38px;
+    padding-left: 105px;
+  }
+
+  .process__img {
+    width: 668px;
+    height: auto;
+  }
+
+  .process__footer {
+    border-top: none;
+    padding: 0 41px 41px;
+  }
+
+  .process__desc {
+    @include font-sans(15px,30px);
+    margin-bottom: 35px;
+  }
+
 }

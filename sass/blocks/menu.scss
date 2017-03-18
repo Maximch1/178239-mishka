@@ -1,18 +1,39 @@
-.menu {
+.menu,
+.menu__search {
   @include container;
-  position: absolute;
+  //position: absolute;
   z-index: 50;
   display: flex;
   flex-direction: column;
-  display: none;
+  //display: none;
+  position: absolute;
+  margin-top: 80px;
 }
 
-.menu li {
+.menu ul,
+.menu__search ul {
+  position: absolute;
+  width: 100%;
+}
+
+.menu__search ul {
+  margin-top: 158px;
+}
+
+.menu__item {
   border-bottom: 1px solid $menu-border;
   background: $menu-background;
+
+  &--search {
+    position: relative;
+  }
+
+  &--basket {
+    position: relative;
+  }
 }
 
-.menu a {
+.menu__link {
   display: block;
   @include font-sans-bold(17px,24px,$menu-color);
   padding: 27px 65px;
@@ -30,4 +51,129 @@
   background: none;
   background-image: url(/img/icon-menu-open.svg);
   outline: none;
+}
+
+.menu__text {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.menu__search-icon {
+  position: absolute;
+  left: 32px;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  fill: $menu-icon-fill;
+}
+
+.menu__basket-icon {
+  position: absolute;
+  left: 32px;
+  top: 30px;
+  width: 18px;
+  height: 18px;
+  fill: $menu-icon-fill;
+}
+
+
+@media #{$tablet-widths} {
+  .menu{
+    padding-left: 50px;
+  }
+
+  .menu,
+  .menu__search {
+    display: flex;
+    align-content: center;
+    position: relative;
+    order: 3;
+    margin: 0;
+    width: auto;
+  }
+
+  .menu ul,
+  .menu__search ul {
+    position: relative;
+    margin: 0;
+  }
+
+  .menu__button {
+    display: none;
+  }
+
+  .menu__search {
+    margin: 0;
+    order: 2;
+    width: auto;
+  }
+
+  .menu__text {
+    display: block;
+    order: 4;
+    width: 334px;
+    padding: 16px 50px 18px 0;
+    text-align: right;
+    @include font-sans(15px,24px);
+  }
+
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .menu__item {
+    width: 167px;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+    &--search {
+      width: 82px;
+      text-align: center;
+      justify-content: center;
+      background-color: $menu-background;
+      border: 1px solid $menu-border;
+      border-top: none;
+    }
+
+    &--basket {
+      width: 264px;
+      padding-right: 50px;
+      justify-content: flex-end;
+      background-color: $menu-background;
+      border-bottom: 1px solid $menu-border;
+    }
+  }
+
+  .menu__item--search .menu__link {
+    font-size: 0;
+  }
+
+  .menu__link {
+    align-items: center;
+  }
+
+  .menu .menu__link {
+    padding: 16px 0 18px;
+    @include font-sans-bold(15px,24px);
+  }
+
+  .menu__search .menu__link {
+    padding: 33px 0 30px;
+  }
+
+  .menu__search-icon {
+    top: 34px;
+  }
+
+  .menu__basket-icon {
+    top: 34px;
+  }
+
 }

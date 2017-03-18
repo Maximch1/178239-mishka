@@ -60,3 +60,29 @@
     }
 
 }
+
+@media #{$tablet-widths} {
+
+  .products__image {
+    width: 768px;
+    min-height: 568px;
+  }
+
+  .products__title {
+    width: 768px;
+    @include font-sans-bold(43px,50px);
+  }
+
+  .products__list {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .products__block {
+    width: 50%;
+  }
+
+  .products__link span {
+    @include font-sans-bold(20px,30px);
+  }
+}
