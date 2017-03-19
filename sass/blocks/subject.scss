@@ -27,6 +27,11 @@
     min-height: 212px;
   }
 
+  .subject__title {
+    @include font-sans-bold(53px,57px);
+
+  }
+
 
 
 

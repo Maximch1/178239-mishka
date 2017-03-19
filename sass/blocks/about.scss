@@ -54,3 +54,10 @@
     width: 50%;
   }
 }
+
+
+@media #{$desktop-widths} {
+  .about {
+    width: 768px;
+  }
+}

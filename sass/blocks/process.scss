@@ -101,5 +101,42 @@
     @include font-sans(15px,30px);
     margin-bottom: 35px;
   }
+}
 
+
+@media #{$desktop-widths} {
+  .process {
+    width: 1050px;
+    height: 455px;
+    //flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: flex-end;
+  }
+
+  .process__header svg {
+    top: 41px;
+    left: 78px;
+  }
+
+  .process__header {
+    width: 367px;
+    padding: 96px 100px 30px 77px;
+    box-sizing: border-box;
+    border-bottom: none;
+  }
+
+  .process__img {
+    width: 683px;
+    height: 455px;
+  }
+
+  .process__footer {
+    box-sizing: border-box;
+    width: 367px;
+    padding: 0 58px 58px 77px;
+  }
+
+  .process__desc {
+    margin-bottom: 49px;
+  }
 }
