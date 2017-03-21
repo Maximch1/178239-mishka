@@ -2,3 +2,23 @@
   @include container;
   padding: 0 30px;
 }
+
+
+@media #{$tablet-widths} {
+  .catalog {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media #{$desktop-widths} {
+  .catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 131px 0 7px;
+    width: 1050px;
+  }
+}

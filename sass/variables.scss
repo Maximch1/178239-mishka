@@ -1,5 +1,6 @@
 
 //Внутренние переменные
+
 //цвета
 $alabaster-color: #f9f9f9;
 $black-color: #000000;
@@ -24,10 +25,19 @@ $viking-color: #59d5bc;
 
 //Глобальные переменные
 
+//размер экрана
+$mobile-widths: (min-width: 320px);
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1150px);
+$mobile-widths-only: (max-width: 767px);
+
+
+//Оформление
 //menu
 $menu-border: $gallery-color;
 $menu-background: $white-color;
 $menu-color: $black-color;
+$menu-icon-fill: $silver-color;
 
 //products
 $products-background-color: $alabaster-color;
@@ -38,9 +48,13 @@ $prod-toys-background-color: $fountain-blue-color;
 $prod-view-subtitle-color: $downy-color;
 $prod-view-color: $tundora-color;
 $prod-view-table: $gallery-color;
+$prod-view-background: $seashell-color;
 
 //page-header
 $pheader-logo: $gallery-color;
+$pheader-background: $alabaster-color;
+$pheader-logo-background: $white-color;
+$pheader-background-black: $seashell-color;
 
 //reviews
 $reviews-text: $tundora-color;
@@ -82,17 +96,6 @@ $process-icon-color: $downy-color;
 $order-title-color: $downy-color;
 $order-text-bottom: $black-color;
 $order-textarea-border: $tundora-color;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$order-background: $seashell-color;
+$order-input-out-border: $tundora-color;
+$order-input-in-border: $downy-color;

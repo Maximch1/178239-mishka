@@ -11,7 +11,7 @@
   position: relative;
   width: 320px;
   min-height: 283px;
-  background: $products-background-color url("../img/hero-mobile@1x.jpg") no-repeat center -19px;
+  background: $products-background-color url("/img/hero-mobile@1x.jpg") no-repeat center -19px;
 }
 
 .products__title{
@@ -58,5 +58,45 @@
     &--toys {
 
     }
+
+}
+
+@media #{$tablet-widths} {
+
+  .products__image {
+    width: 768px;
+    min-height: 568px;
+  }
+
+  .products__title {
+    width: 768px;
+    @include font-sans-bold(43px,50px);
+  }
+
+  .products__list {
+    flex-direction: row;
+    padding: 0 50px;
+    background-color: $products-background-color;
+  }
+
+  .products__block {
+    width: 50%;
+  }
+
+  .products__link span {
+    @include font-sans-bold(20px,30px);
+  }
+}
+
+
+@media #{$desktop-widths} {
+  .products__image {
+    width: 1150px;
+  }
+
+  .products__title {
+    @include font-sans-bold(53px,57px);
+  }
+
 
 }

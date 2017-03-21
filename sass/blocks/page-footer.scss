@@ -5,3 +5,10 @@
   background-color: $pfooter-background;
 }
 
+
+@media #{$tablet-widths} {
+  .page-footer {
+    flex-direction: row;
+  }
+
+}
