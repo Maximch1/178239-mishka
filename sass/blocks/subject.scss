@@ -1,5 +1,5 @@
 .subject {
-  margin-bottom: 29px;
+  margin-bottom: 22px;
 }
 
 .subject__wrapper {
@@ -18,21 +18,21 @@
   .subject__title {
     @include font-sans-bold(43px,50px);
   }
+
+  .subject__wrapper {
+    padding: 34px 0 68px;
+  }
 }
 
 
 @media #{$desktop-widths} {
   .subject {
     background-color: $subject-background;
-    min-height: 212px;
+    min-height: 174px;
   }
 
   .subject__title {
     @include font-sans-bold(53px,57px);
 
   }
-
-
-
-
 }

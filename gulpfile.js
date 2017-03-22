@@ -23,7 +23,7 @@ gulp.task("style", function() {
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
-    index: "form.html",
+    index: "catalog.html",
     notify: false,
     open: true,
     cors: true,

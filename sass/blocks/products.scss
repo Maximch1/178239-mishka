@@ -36,7 +36,7 @@
 
 .products__link {
   display: block;
-  padding: 27px 50px 27px 27px;
+  padding: 25px 50px 30px 27px;
 }
 
 .products__link span {
@@ -52,11 +52,13 @@
 
 
     &--interior {
-
+      right: 35px;
+      top: 22px;
     }
 
     &--toys {
-
+      right: 26px;
+      top: 20px;
     }
 
 }
@@ -65,12 +67,29 @@
 
   .products__image {
     width: 768px;
-    min-height: 568px;
+    min-height: 566px;
   }
 
   .products__title {
     width: 768px;
     @include font-sans-bold(43px,50px);
+    padding-top: 94px;
+  }
+
+  .products__link {
+    padding: 28px 50px 15px 36px;
+  }
+
+  .products__icon {
+    &--interior {
+      right: 36px;
+      top: 30px;
+    }
+
+    &--toys {
+      right: 34px;
+      top: 30px;
+    }
   }
 
   .products__list {
@@ -98,5 +117,7 @@
     @include font-sans-bold(53px,57px);
   }
 
-
+  .products__link {
+    padding-left: 38px;
+  }
 }

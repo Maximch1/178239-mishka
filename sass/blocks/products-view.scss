@@ -2,7 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  padding: 27px 30px 42px;
+  padding: 27px 30px 68px;
 }
 
 .products-view__header {
@@ -39,15 +39,14 @@
 
 .products-view__table li {
   display: table-cell;
-  padding: 9px 0 10px;
-
+  padding: 10px 0 11px;
   &:first-child {
-    width: 94px;
+    width: 96px;
   }
 }
 
 .products-view__picture {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .product-view__cost {
@@ -59,23 +58,35 @@
 @media #{$tablet-widths} {
 
   .products-view {
-    padding: 48px 50px;
+    padding: 60px 50px 26px;
   }
 
   .products-view__header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  .products-view__picture {
+    margin-top: 8px;
+    margin-bottom: 23px;
+  }
+
+  .products-view__table li {
+    @include font-sans(15px,20px,$prod-view-color);
+    padding: 8px 0 11px;
   }
 
   .products-view__title {
     @include font-sans-bold(43px,50px);
+    margin-bottom: 10px;
+    margin-left: -5px;
   }
 
   .products-view__subtitle {
     width: 85px;
-    margin: 0 24px;
+    margin: 0 20px;
     text-align: center;
   }
 
@@ -94,6 +105,7 @@
 
   .products-view__preview {
     @include font-sans(17px, 30px);
+    margin-bottom: 36px;
   }
 
   .products-view__table {
@@ -101,17 +113,18 @@
   }
 
   .products-view__img {
-    width: 330px;
+    width: 334px;
     height: 404px;
   }
 
   .product-view__footer {
     position: absolute;
-    bottom: 27px;
+    bottom: 26px;
   }
 
   .product-view__cost {
     @include font-sans-bold(20px,24px);
+    margin-bottom: 34px;
   }
 
   .product-view__btn {
@@ -124,7 +137,7 @@
 @media #{$desktop-widths} {
 
   .products-view {
-    padding: 0 50px;
+    padding: 14px 50px 0;
   }
 
   .products-view__header {
@@ -136,13 +149,13 @@
 
   .products-view__title {
     @include font-sans-bold(53px,57px);
-    margin-left: 50px;
+    margin-left: 46px;
   }
 
   .products-view__subtitle {
     order: -1;
     margin: 0;
-    margin-left: 37px;
+    margin-left: 40px;
   }
 
   .products-view__img {
@@ -156,12 +169,12 @@
   }
 
   .products-view__content-wrap {
-    margin-top: 160px;
+    margin-top: 168px;
     margin-left: 175px;
   }
 
   .products-view__preview {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .product-view__footer {
@@ -169,6 +182,15 @@
   }
 
   .product-view__cost {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+  }
+
+  .products-view__table li:first-child {
+    width: 98px;
+  }
+
+  .products-view__picture {
+    margin-top: 12px;
+    margin-bottom: 22px;
   }
 }
