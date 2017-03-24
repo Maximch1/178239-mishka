@@ -2,7 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  margin-bottom: 39px;
+  padding-bottom: 200px;
 }
 
 .contact__btn {
@@ -59,8 +59,7 @@
 @media #{$tablet-widths} {
   .contacts {
     padding-top: 82px;
-    background: url(../img/icon-flag.svg) no-repeat right 53px top 65px;
-    margin-bottom: 58px;
+    background: url(/img/icon-flag.svg) no-repeat right 53px top 65px;
   }
 
   .contacts__wrapper {
@@ -121,7 +120,7 @@
   .contacts {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 50px 0 220px;
+    padding: 0 50px 140px 220px;
     justify-content: flex-end;
     margin-top: 96px;
     margin-bottom: 0;
@@ -154,6 +153,7 @@
     width: 525px;
     height: 457px;
     position: relative;
+    //margin-bottom: 0;
   }
 
   .contacts__table {

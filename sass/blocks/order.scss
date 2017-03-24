@@ -315,7 +315,7 @@
 
   .order__block input[type="radio"]:checked + .order__type-desc {
     &::after {
-      top: 28px;
+      top: 27px;
       width: 22px;
       height: 22px;
       left: 15px;
@@ -374,6 +374,7 @@
 
   .order__input-text {
     width: 100%;
+    resize: none;
   }
 
   .order__group--btn {

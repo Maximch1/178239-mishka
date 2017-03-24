@@ -1,4 +1,7 @@
 .products {
+  background-color: $products-background-color;
+}
+.products__wrapper {
   @include container;
 }
 
