@@ -1,0 +1,111 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  display: none;
+  width: 320px;
+  min-height: 338px;
+  background-color: $modal-background;
+  border: 1px solid $silver-color;
+
+
+  &--visible {
+    display: block;
+  }
+}
+
+.modal__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal__header {
+  @include font-sans-bold(25px,30px);
+  text-transform: uppercase;
+  margin: 30px auto 12px;
+  width: 148px;
+  text-align: center;
+}
+
+.modal__desc {
+  @include font-sans(15px,30px);
+  margin: 0 auto 23px;
+}
+
+.modal__item {
+  display: none;
+}
+
+.modal__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__size-btn {
+  @include font-sans-bold(17px,16px);
+  text-align: center;
+  width: 78px;
+  height: 32px;
+  padding-top: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid $silver-color;
+  margin-bottom: 31px;
+}
+
+.modal__add-btn {
+  background-color: $modal-btn-color;
+  border-color: $modal-btn-color;
+  color: $white-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $modal-btn-color;
+  }
+}
+
+.modal__list input:checked + .modal__size-btn {
+  border-color: $modal-btn-color;
+}
+
+
+@media #{$tablet-widths} {
+  .modal {
+    width: 568px;
+  }
+
+  .modal__wrapper {
+    width: 360px;
+  }
+
+  .modal__header {
+    @include font-sans-bold(30px,57px);
+    width: auto;
+    margin: 33px auto 14px;
+  }
+
+  .modal__desc {
+    @include font-sans(17px,30px);
+    margin: 0 auto 21px;
+  }
+
+  .modal__form {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .modal__size-btn {
+    width: 108px;
+  }
+
+
+
+
+}
+

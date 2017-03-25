@@ -36,6 +36,14 @@
 }
 
 @media #{$tablet-widths} {
+  .page-header {
+    background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f9f9f9 88px,#f9f9f9);
+
+    &--black {
+      background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f1f1f1 88px,#f1f1f1);
+    }
+  }
+
   .page-header__wrapper {
     flex-wrap: wrap;
     flex-direction: row;
@@ -56,13 +64,5 @@
     order: 2;
     width: 230px;
     text-align: center;
-  }
-
-  .page-header {
-    background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f9f9f9 88px,#f9f9f9);
-
-    &--black {
-      background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f1f1f1 88px,#f1f1f1);
-    }
   }
 }
