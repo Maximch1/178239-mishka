@@ -184,6 +184,23 @@
         </a>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrapper">
+        <h3 class="modal__header">Добавить в корзину</h3>
+        <form class="modal__form">
+          <legend class="modal__desc">Выберите размер:</legend>
+          <div class="modal__list">
+            <input type="radio" id="modal-size-s" class="modal__item" name="size">
+            <label for="modal-size-s" class="modal__size-btn">s</label>
+            <input type="radio" id="modal-size-m" class="modal__item"name="size">
+            <label for="modal-size-m" class="modal__size-btn">m</label>
+            <input type="radio" id="modal-size-l" class="modal__item"name="size">
+            <label for="modal-size-l" class="modal__size-btn">l</label>
+          </div>
+          <button class="btn modal__add-btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
