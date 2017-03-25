@@ -46,6 +46,15 @@
   color: $contacts-table;
   border-bottom: 1px solid $contacts-email;
   padding-bottom: 5px;
+
+  &:hover {
+    color: $contacts-color-hover;
+    border-bottom-color: $contacts-color-hover;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .contact__map {

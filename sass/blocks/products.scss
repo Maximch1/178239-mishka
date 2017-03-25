@@ -28,21 +28,34 @@
 .products__block {
   position: relative;
 
-    &--interior {
-      background-color: $prod-interior-background-color;
-    }
+  &--interior {
+    background-color: $prod-interior-background-color;
 
-    &--toys {
-    background-color: $prod-toys-background-color;
+    &:hover {
+      background-color: #59d5bc;
     }
+  }
+  &--toys {
+    background-color: $prod-toys-background-color;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .products__link {
   display: block;
   padding: 25px 50px 30px 27px;
+  &:active {
+    color: rgba(255,255,255,.3);
+  }
 }
 
-.products__link span {
+.products__link span{
   display: inline-block;
   width: 10px;
   color: $white-color;
@@ -53,17 +66,15 @@
   position: absolute;
   opacity: 0.5;
 
+  &--interior {
+   right: 35px;
+   top: 22px;
+  }
 
-    &--interior {
-      right: 35px;
-      top: 22px;
-    }
-
-    &--toys {
-      right: 26px;
-      top: 20px;
-    }
-
+  &--toys {
+    right: 26px;
+    top: 20px;
+  }
 }
 
 @media #{$tablet-widths} {

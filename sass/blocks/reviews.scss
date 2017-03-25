@@ -44,10 +44,18 @@
   height: 52px;
   background-color: $reviews-btn-background;
   border: 1px solid $reviews-btn-border;
+  outline: none;
+  cursor: pointer;
 
   &--prev {
     border-right: none;
   }
+
+  &:hover {
+
+  }
+
+
 }
 
 

@@ -116,6 +116,15 @@
     top: 3px;
     cursor: pointer;
   }
+
+  &:hover::before {
+    border-color: $order-border-hover;
+  }
+
+  &:active::before {
+    border-color: $order-border-active;
+    opacity: .3;
+  }
 }
 
 .order__color-desc {
@@ -132,6 +141,15 @@
     cursor: pointer;
     display: block;
     position: absolute;
+  }
+
+  &:hover::before {
+    border-color: $order-border-hover;
+  }
+
+  &:active::before {
+    border-color: $order-border-active;
+    opacity: .3;
   }
 }
 
@@ -191,6 +209,14 @@
     padding: 14px 25px 25px 17px;
     overflow: hidden;
     box-sizing: border-box;
+  }
+
+  &:hover {
+    border-color: $order-border-hover;
+  }
+
+  &:focus {
+    border-color: $order-border-hover;
   }
 }
 

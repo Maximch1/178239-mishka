@@ -2,6 +2,14 @@
   display: flex;
   flex-direction:column;
   margin-bottom: 33px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.10);
+  }
 }
 
 .catalog-item__img {
