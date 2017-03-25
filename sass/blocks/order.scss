@@ -2,6 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
+  margin-bottom: 215px;
 }
 
 .order__desc {
@@ -38,10 +39,6 @@
 
   &--additional {
     padding: 42px 30px 16px;
-  }
-
-  &--btn {
-    margin-bottom: 55px;
   }
 }
 
@@ -209,7 +206,7 @@
 
   .order {
     padding-top: 65px;
-    margin-bottom: 50px;
+    margin-bottom: 193px;
   }
 
   .order__desc {

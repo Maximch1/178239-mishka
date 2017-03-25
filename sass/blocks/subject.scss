@@ -1,10 +1,10 @@
 .subject {
   margin-bottom: 22px;
+  background-color: $subject-background;
 }
 
 .subject__wrapper {
   @include container;
-  background-color: $subject-background;
   padding: 70px 0 76px;
 }
 
