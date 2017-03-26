@@ -26,10 +26,11 @@
 
 .reviews__author-name {
   @include font-sans-bold(18px,24px);
+  margin-bottom: 3px;
 }
 
 .reviews__author-link {
-  @include font-sans(18px,30px,$reviews-text);
+  @include font-sans(17px,31px,$reviews-text);
 }
 
 .reviews_controls {
@@ -43,10 +44,18 @@
   height: 52px;
   background-color: $reviews-btn-background;
   border: 1px solid $reviews-btn-border;
+  outline: none;
+  cursor: pointer;
 
   &--prev {
     border-right: none;
   }
+
+  &:hover {
+
+  }
+
+
 }
 
 
@@ -57,21 +66,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    padding: 106px 50px 112px;
+    margin-bottom: 0;
   }
 
   .reviews__title {
     @include font-sans-bold(43px,50px);
     order: -2;
+    margin-bottom: 48px;
+    margin-left: -5px;
   }
 
   .reviews__btn {
     width: 175px;
     order: -1;
+    align-self: flex-start;
+
   }
 
   .reviews__text {
     @include font-sans(17px,30px);
-    margin-bottom: 58px;
+    margin-bottom: 34px;
   }
 
   .reviews__author {
@@ -80,6 +95,7 @@
 
   .reviews__author-name {
     @include font-sans-bold(17px,24px);
+    margin: 0;
   }
 
   .reviews_controls {
@@ -88,7 +104,7 @@
 
   .reviews__control-btn {
     border: 0;
-    width: 90px;
+    width: 87px;
   }
 
 }
@@ -96,12 +112,12 @@
 
 @media #{$desktop-widths} {
   .reviews {
-    padding-left: 225px;
     position: relative;
+    padding: 170px 50px 162px 225px;
   }
 
   .reviews__title {
-    margin-bottom: 50px;
+    margin: -10px 0 50px -5px;
     @include font-sans-bold(53px,57px);
   }
 
@@ -112,14 +128,5 @@
   .reviews__text {
     margin-bottom: 40px;
     padding-right: 100px;
-  }
-
-  .reviews__btn {
-    position: absolute;
-    right: 48px;
-  }
-
-  .reviews_controls {
-    margin-right: 15px;
   }
 }

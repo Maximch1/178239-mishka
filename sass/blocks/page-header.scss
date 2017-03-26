@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   @include container;
   display: flex;
   flex-direction: column;
@@ -19,8 +19,32 @@
   background-color: $pheader-logo-background;
 }
 
+
+
+@media #{$mobile-widths-only} {
+  .page-header {
+    min-height: 80px;
+  }
+
+  .page-header__wrapper {
+    &--js {
+      position: absolute;
+      left: 50%;
+      margin-left: -160px;
+    }
+  }
+}
+
 @media #{$tablet-widths} {
   .page-header {
+    background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f9f9f9 88px,#f9f9f9);
+
+    &--black {
+      background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f1f1f1 88px,#f1f1f1);
+    }
+  }
+
+  .page-header__wrapper {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -38,7 +62,7 @@
 @media #{$desktop-widths} {
   .page-header__logo {
     order: 2;
-    width: 231px;
+    width: 230px;
     text-align: center;
   }
 }

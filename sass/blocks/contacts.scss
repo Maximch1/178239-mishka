@@ -2,7 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  margin-bottom: 39px;
+  padding-bottom: 200px;
 }
 
 .contact__btn {
@@ -24,7 +24,7 @@
   display: table;
   @include font-sans(15px,30px,$contacts-table);
   border-collapse: collapse;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .contacts__table ul {
@@ -37,6 +37,7 @@
     width: 78px;
     height: 58px;
     text-transform: lowercase;
+    padding-bottom: 3px;
   }
 }
 
@@ -44,6 +45,16 @@
   @include font-sans(15px,30px);
   color: $contacts-table;
   border-bottom: 1px solid $contacts-email;
+  padding-bottom: 5px;
+
+  &:hover {
+    color: $contacts-color-hover;
+    border-bottom-color: $contacts-color-hover;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .contact__map {
@@ -55,9 +66,20 @@
 
 
 @media #{$tablet-widths} {
+  .contacts {
+    padding-top: 82px;
+    background: url(/img/icon-flag.svg) no-repeat right 53px top 65px;
+  }
+
+  .contacts__wrapper {
+    padding: 0 50px;
+    margin-bottom: 48px;
+  }
+
   .contacts__title {
     @include font-sans-bold(43px,50px);
     margin-bottom: 48px;
+    margin-left: -5px;
   }
 
   .contacts__table {
@@ -65,11 +87,8 @@
     flex-direction: row;
     justify-content:space-between;
     @include font-sans(17px,30px);
+    margin-bottom: 8px;
   }
-
-  //.contacts__table ul {
-  //  width: 50%;
-  //}
 
   .contacts__table li,
   .contacts__table a {
@@ -79,11 +98,11 @@
   .contacts__table li {
 
     &:first-child {
-      width: 70px;
+      width: 78px;
     }
 
     &:last-child {
-      width: 250px;
+      width: 260px;
     }
   }
 
@@ -99,6 +118,10 @@
     width: 230px;
     margin: 0 auto;
   }
+
+  .contacts__email {
+    padding-bottom: 3px;
+  }
 }
 
 
@@ -106,8 +129,11 @@
   .contacts {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 50px 0 220px;
+    padding: 0 50px 140px 220px;
     justify-content: flex-end;
+    margin-top: 96px;
+    margin-bottom: 0;
+    background-position: left 113px top 60px;
   }
 
   .contacts__wrapper {
@@ -116,8 +142,12 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 70px 55px 0 0;
+    padding: 70px 50px 0 0;
     width: 300px;
+  }
+
+  .contacts__table li:last-child {
+    width: 223px;
   }
 
   .contact__btn {
@@ -125,15 +155,14 @@
     position: relative;
     margin-left: 5px;
     bottom: 108px;
-    //position: absolute;
-    //top: 20px;
-
   }
+
   .contact__map {
     order: 2;
     width: 525px;
     height: 457px;
     position: relative;
+    //margin-bottom: 0;
   }
 
   .contacts__table {
@@ -142,7 +171,5 @@
 
   .contacts__title {
     @include font-sans-bold(53px,57px);
-    //width: 350px;
-
   }
 }
