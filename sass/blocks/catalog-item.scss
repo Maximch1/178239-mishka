@@ -53,10 +53,31 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid $cat-item-border;
+  position: relative;
+  align-items: center;
+}
+
+.catalog-item__link {
+  width: 20px;
+  height: 18px;
+
+  &:hover {
+    .catalog-item__icon {
+      fill: $downy-color;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .catalog-item__icon {
+      fill: $downy-color;
+      opacity: .3;
+    }
+  }
 }
 
 .catalog-item__icon {
-  display: none;
+  opacity: .2;
 }
 
 
@@ -87,8 +108,9 @@
 
   .catalog-item__price {
     @include font-sans-bold(17px,24px);
-    margin-top: auto;
-    margin-left: 5px;
+    margin: auto 5px 0;
+    //margin-top: auto;
+    //margin-left: 5px;
     padding-top: 21px;
   }
 }

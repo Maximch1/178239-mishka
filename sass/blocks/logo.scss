@@ -14,6 +14,13 @@
   .logo__img {
     width: 149px;
     height: 72px;
-  }
 
+    &:hover {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+  }
 }

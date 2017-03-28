@@ -1,6 +1,7 @@
 .subject {
   margin-bottom: 22px;
   background-color: $subject-background;
+  position: relative;
 }
 
 .subject__wrapper {
@@ -15,12 +16,27 @@
 
 
 @media #{$tablet-widths} {
+  .subject {
+    margin-bottom: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background: url("/img/bg-zigzag-fill.svg") repeat-x;
+      z-index: 100;
+      background-size: contain;
+    }
+  }
+
   .subject__title {
     @include font-sans-bold(43px,50px);
   }
 
   .subject__wrapper {
-    padding: 34px 0 68px;
+    padding: 36px 0 92px;
   }
 }
 
@@ -29,6 +45,21 @@
   .subject {
     background-color: $subject-background;
     min-height: 174px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      background: url("/img/bg-zigzag-fill.svg") repeat-x;
+      z-index: 100;
+    }
+
+    .subject__wrapper {
+      padding: 36px 0 118px;
+    }
   }
 
   .subject__title {

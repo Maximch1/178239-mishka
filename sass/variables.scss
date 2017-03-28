@@ -4,7 +4,7 @@
 //цвета
 $alabaster-color: #f9f9f9;
 $black-color: #000000;
-$downy-color: #63d1ba;
+$downy-color: #63d1bb;
 $fountain-blue-color: #56c3b2;
 $gallery-color: #ececec;
 $gray-color: #8d8d8d;
@@ -70,6 +70,7 @@ $contacts-color-hover: $puerto-rico-color;
 
 //page-footer
 $pfooter-background: $seashell-color;
+$pfooter-logo-hover: $puerto-rico-color;
 
 //btn
 $btn-color: $tundora-color;
@@ -78,6 +79,11 @@ $btn-hover-background: $tundora-color;
 
 //copyright
 $copyright-color: $black-color;
+$copyright-icon: $downy-color;
+$copyright-icon-hover: $puerto-rico-color;
+
+//social
+$social-icon-hover: $puerto-rico-color;
 
 //subject
 $subject-background: $seashell-color;

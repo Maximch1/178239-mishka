@@ -30,10 +30,18 @@
 
   &:hover {
     color: rgba(0,0,0,.6);
+    svg {
+      fill: $downy-color;
+      opacity: 1;
+    }
   }
 
   &:active {
     color: rgba(0,0,0,.3);
+    svg {
+      fill: $downy-color;
+      opacity: .3;
+    }
   }
 }
 
@@ -213,6 +221,11 @@
   .menu__sale {
     display: block;
     order: 4;
+  }
+
+  .menu__catalog,
+  .menu__search {
+    width: auto;
   }
 
   .menu__catalog .menu__link,

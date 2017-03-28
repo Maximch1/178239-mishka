@@ -1,3 +1,50 @@
 .social {
-  @include container;
+  flex-basis: 50%;
+  border-bottom: 1px solid $silver-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.social__link {
+  margin: 0 20px;
+
+  &:hover .social__link-icon {
+    fill: $social-icon-hover;
+  }
+
+  &:active .social__link-icon {
+      opacity: .3;
+    }
+
+  &--insta {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 24px;
+    height: 20px;
+  }
+}
+
+
+@media #{$tablet-widths} {
+  .social {
+    border: none;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .social__link {
+    &--insta {
+      padding-top: 6px;
+    }
+  }
+}
+
