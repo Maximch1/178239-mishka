@@ -20,6 +20,7 @@ $tundora-color: #444444;
 $thunder-color: #231f20;
 $white-color: #ffffff;
 $viking-color: #59d5bc;
+$blue-chill: #149080;
 
 
 
@@ -30,6 +31,7 @@ $mobile-widths: (min-width: 320px);
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1150px);
 $mobile-widths-only: (max-width: 767px);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 
 //Оформление
@@ -106,4 +108,3 @@ $order-border-active: $tundora-color;
 //modal
 $modal-background: $white-color;
 $modal-btn-color: $downy-color;
-

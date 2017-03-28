@@ -2,3 +2,18 @@
   width: 86px;
   height: 35px;
 }
+
+@media #{$tablet-widths} {
+  .logo__img {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .logo__img {
+    width: 149px;
+    height: 72px;
+  }
+
+}
