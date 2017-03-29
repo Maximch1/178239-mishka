@@ -75,7 +75,7 @@ gulp.task("html:update", ["html:copy"], function (done) {
 gulp.task("serve", function() {
   server.init({
     server: "build/",
-    index: "catalog.html",
+    index: "index.html",
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
