@@ -2,6 +2,7 @@
   background-color: $products-background-color;
   position: relative;
 }
+
 .products__wrapper {
   @include container;
 }
@@ -61,8 +62,8 @@
   fill: $blue-chill;
 
   &--interior {
-   right: 35px;
-   top: 22px;
+    right: 35px;
+    top: 22px;
     width: 41px;
     height: 62px;
   }

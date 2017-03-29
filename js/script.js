@@ -29,4 +29,3 @@ modal_button.addEventListener('click', function () {
   window.classList.add('modal--visible');
   body.classList.add('overlay');
 });
-
