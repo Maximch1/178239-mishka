@@ -21,11 +21,12 @@ menu_button.addEventListener('click', function () {
 
 
 // Вызов modal окна
-var window = document.querySelector('.modal');
-var body = document.querySelector('body');
+var modal_window = document.querySelector('.modal');
+var modal_body = document.querySelector('body');
 var modal_button = document.querySelector('.product-view__btn');
 
-modal_button.addEventListener('click', function () {
-  window.classList.add('modal--visible');
-  body.classList.add('overlay');
+modal_button.addEventListener('click', function (event) {
+  event.preventDefault();
+  modal_window.classList.add('modal--visible');
+  modal_body.classList.add('overlay');
 });
