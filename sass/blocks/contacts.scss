@@ -123,6 +123,10 @@
     margin-bottom: 8px;
   }
 
+  .contacts__table ul {
+    display: block;
+  }
+
   .contacts__table li,
   .contacts__table a {
     @include font-sans(17px,30px);
@@ -194,8 +198,8 @@
   .contact__btn {
     order: 3;
     position: relative;
-    margin-left: 5px;
     bottom: 108px;
+    margin-right: 646px;
   }
 
   .contact__map {

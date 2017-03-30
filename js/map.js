@@ -15,7 +15,10 @@ function initialize() {
     document.querySelector(".contact__map"),
     mapOptions
   );
-  var image = "img/icon-map-pin.svg";
+  var image = "../img/icon-map-pin.svg";
+  var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+  var image = (is_internetExplorer11) ? '../img/icon-map-pin.png' : '../img/icon-map-pin.svg';
+
   var myLatLng = new google.maps.LatLng(x, y);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,

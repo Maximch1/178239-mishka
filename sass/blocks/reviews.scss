@@ -122,6 +122,7 @@
 
   .reviews__author {
     margin: auto 0;
+    margin-right: 256px;
   }
 
   .reviews__author-name {
@@ -130,7 +131,7 @@
   }
 
   .reviews_controls {
-    margin: 0;
+    margin: auto 0;
   }
 
   .reviews__control-btn {
@@ -169,5 +170,9 @@
   .reviews__text {
     margin-bottom: 40px;
     padding-right: 100px;
+  }
+
+  .reviews__author {
+    margin-right: 463px;
   }
 }

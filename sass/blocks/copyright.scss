@@ -2,6 +2,7 @@
   flex-basis: 50%;
   display: flex;
   justify-content: space-between;
+  flex-grow: 0.27;
 }
 
 .copyright__link {
@@ -30,6 +31,8 @@
 
 .copyright__icon {
   fill: $copyright-icon;
+  width: 27px;
+  height: 34px;
 }
 
 
@@ -37,6 +40,7 @@
 @media #{$tablet-widths} {
   .copyright {
     flex-basis: 0;
+    flex-grow: 0.5;
   }
 
   .copyright__text {
@@ -45,6 +49,13 @@
 
   .copyright__icon {
     padding-top: 6px;
+  }
+}
+
+
+@media #{$desktop-widths} {
+  .copyright {
+    flex-grow: 0.27;
   }
 
 }
