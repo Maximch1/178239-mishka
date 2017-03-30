@@ -2,7 +2,20 @@
   @include container;
   display: flex;
   flex-direction: column;
-  padding: 27px 30px 68px;
+  padding: 27px 30px 42px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../img/bg-zigzag-line.svg");
+    width: 100%;
+    height: 6px;
+    background-size: contain;
+
+  }
 }
 
 .products-view__header {
@@ -56,9 +69,12 @@
 }
 
 @media #{$tablet-widths} {
-
   .products-view {
-    padding: 60px 50px 26px;
+    padding: 33px 50px 42px;
+
+    &::after {
+      height: 15px;
+    }
   }
 
   .products-view__header {
@@ -137,13 +153,17 @@
 @media #{$desktop-widths} {
 
   .products-view {
-    padding: 14px 50px 0;
+    padding: 0 50px 5px;
+
+    &::after {
+      height: 23px;
+    }
   }
 
   .products-view__header {
     justify-content: flex-start;
     position: relative;
-    top: 125px;
+    top: 105px;
     z-index: 5;
   }
 
@@ -165,7 +185,7 @@
   }
 
   .products-view__content {
-    top: -45px;
+    top: -64px;
   }
 
   .products-view__content-wrap {

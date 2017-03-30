@@ -2,7 +2,8 @@
   @include container;
   display: flex;
   flex-direction: column;
-  padding-bottom: 200px;
+  //padding-bottom: 200px;
+  padding: 35px 0 200px;
 }
 
 .contact__btn {
@@ -62,13 +63,45 @@
   padding: 0;
   height: 457px;
   margin-bottom: 39px;
+  position: relative;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    left: 124px;
+    top: 166px;
+    background-image: url("../img/icon-map-pin.svg");
+    z-index: 1;
+  }
+}
+
+.contact__map--js {
+  &::after {
+    display: none;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .contact__map {
+    background: url("../img/map-mobile@1x.jpg") no-repeat center;
+    width: 320px;
+    height: 457px;
+
+    @media #{$retina} {
+      background: url("../img/map-mobile@2x.jpg") no-repeat center;
+      background-size: 320px;
+    }
+  }
 }
 
 
 @media #{$tablet-widths} {
   .contacts {
-    padding-top: 82px;
-    background: url(/img/icon-flag.svg) no-repeat right 53px top 65px;
+    padding-top: 62px;
+    background: url("../img/icon-flag.svg") no-repeat right 53px top 46px;
   }
 
   .contacts__wrapper {
@@ -108,10 +141,18 @@
 
   .contact__map {
     margin-bottom: 55px;
-  }
-  .contact__img {
     width: 768px;
     height: 457px;
+    background: url("../img/map-tablet@1x.jpg") no-repeat center;
+
+    @media #{$retina} {
+      background: url("../img/map-tablet@2x.jpg") no-repeat center;
+      background-size: 768px;
+    }
+
+    &::after {
+      left: 348px;
+    }
   }
 
   .contact__btn {
@@ -131,7 +172,7 @@
     flex-wrap: wrap;
     padding: 0 50px 140px 220px;
     justify-content: flex-end;
-    margin-top: 96px;
+    margin-top: 71px;
     margin-bottom: 0;
     background-position: left 113px top 60px;
   }
@@ -162,7 +203,15 @@
     width: 525px;
     height: 457px;
     position: relative;
+    width: 525px;
+    height: 457px;
     //margin-bottom: 0;
+    background: url("../img/map-desktop@1x.jpg") no-repeat center;
+
+    @media #{$retina} {
+      background: url("../img/map-desktop@2x.jpg") no-repeat center;
+      background-size: 525px;
+    }
   }
 
   .contacts__table {
@@ -171,5 +220,12 @@
 
   .contacts__title {
     @include font-sans-bold(53px,57px);
+  }
+
+  .contact__map {
+
+    &::after {
+      left: 237px;
+    }
   }
 }

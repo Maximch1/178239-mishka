@@ -1,9 +1,50 @@
 .copyright {
-  padding: 28px 0 32px;
-  width: 185px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 184px;
   margin: 0 auto;
+
+  &:hover .copyright__icon {
+    fill: $copyright-icon-hover;
+  }
+
+  &:active {
+    .copyright__icon,
+    .copyright__text {
+      opacity: .3;
+    }
+  }
 }
 
 .copyright__text {
   @include font-sans-bold(19px,18px,$copyright-color);
+  padding-bottom: 8px;
+}
+
+.copyright__icon {
+  fill: $copyright-icon;
+}
+
+
+
+@media #{$tablet-widths} {
+  .copyright {
+    flex-basis: 0;
+  }
+
+  .copyright__text {
+    padding: 0;
+  }
+
+  .copyright__icon {
+    padding-top: 6px;
+  }
+
 }

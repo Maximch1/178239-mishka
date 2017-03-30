@@ -4,7 +4,7 @@
 //цвета
 $alabaster-color: #f9f9f9;
 $black-color: #000000;
-$downy-color: #63d1ba;
+$downy-color: #63d1bb;
 $fountain-blue-color: #56c3b2;
 $gallery-color: #ececec;
 $gray-color: #8d8d8d;
@@ -20,6 +20,7 @@ $tundora-color: #444444;
 $thunder-color: #231f20;
 $white-color: #ffffff;
 $viking-color: #59d5bc;
+$blue-chill: #149080;
 
 
 
@@ -30,6 +31,7 @@ $mobile-widths: (min-width: 320px);
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1150px);
 $mobile-widths-only: (max-width: 767px);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 
 //Оформление
@@ -68,6 +70,7 @@ $contacts-color-hover: $puerto-rico-color;
 
 //page-footer
 $pfooter-background: $seashell-color;
+$pfooter-logo-hover: $puerto-rico-color;
 
 //btn
 $btn-color: $tundora-color;
@@ -76,6 +79,11 @@ $btn-hover-background: $tundora-color;
 
 //copyright
 $copyright-color: $black-color;
+$copyright-icon: $downy-color;
+$copyright-icon-hover: $puerto-rico-color;
+
+//social
+$social-icon-hover: $puerto-rico-color;
 
 //subject
 $subject-background: $seashell-color;
@@ -106,4 +114,3 @@ $order-border-active: $tundora-color;
 //modal
 $modal-background: $white-color;
 $modal-btn-color: $downy-color;
-
