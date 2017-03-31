@@ -1,8 +1,8 @@
 function initialize() {
   var x = 59.936379;
   var y = 30.321495;
-  var con_map = document.querySelector(".contact__map");
-  con_map.classList.add("contact__map--js");
+  var con_map = document.querySelector('.contact__map');
+  con_map.classList.add('contact__map--js');
 
 
   var mapOptions = {
@@ -12,10 +12,10 @@ function initialize() {
     disableDefaultUI: true
   }
   var map = new  google.maps.Map(
-    document.querySelector(".contact__map"),
+    document.querySelector('.contact__map'),
     mapOptions
   );
-  var image = "../img/icon-map-pin.svg";
+  var image = '../img/icon-map-pin.svg';
   var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
   var image = (is_internetExplorer11) ? '../img/icon-map-pin.png' : '../img/icon-map-pin.svg';
 
@@ -26,4 +26,4 @@ function initialize() {
     icon: image
   });
 }
-google.maps.event.addDomListener(window, "load", initialize);
+google.maps.event.addDomListener(window, 'load', initialize);
