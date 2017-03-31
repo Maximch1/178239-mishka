@@ -3,30 +3,30 @@
  */
 
 //бутерброд
-var Page = document.querySelector('.page-header__wrapper');
-var Menu1 = document.querySelector('.menu__catalog');
-var Menu2 = document.querySelector('.menu__search');
-var menu_button = document.querySelector('.menu__button');
-Page.classList.add('page-header__wrapper--js');
-Menu1.classList.add('menu__catalog--js');
-Menu2.classList.add('menu__search--js');
+var page = document.querySelector('.page-header__wrapper');
+var menu1 = document.querySelector('.menu__catalog');
+var menu2 = document.querySelector('.menu__search');
+var menuButton = document.querySelector('.menu__button');
+page.classList.add('page-header__wrapper--js');
+menu1.classList.add('menu__catalog--js');
+menu2.classList.add('menu__search--js');
 
-menu_button.addEventListener('click', function () {
-  Menu1.classList.toggle('menu__catalog--js');
-  Menu2.classList.toggle('menu__search--js');
-  menu_button.classList.toggle('menu__button--close');
+menuButton.addEventListener('click', function () {
+  menu1.classList.toggle('menu__catalog--js');
+  menu2.classList.toggle('menu__search--js');
+  menuButton.classList.toggle('menu__button--close');
 });
 
 
 
 
 // Вызов modal окна
-var modal_window = document.querySelector('.modal');
-var modal_body = document.querySelector('body');
-var modal_button = document.querySelector('.product-view__btn');
+var modalWindow = document.querySelector('.modal');
+var modalBody = document.querySelector('body');
+var modalButton = document.querySelector('.product-view__btn');
 
-modal_button.addEventListener('click', function (event) {
+modalButton.addEventListener('click', function (event) {
   event.preventDefault();
-  modal_window.classList.add('modal--visible');
-  modal_body.classList.add('overlay');
+  modalWindow.classList.add('modal--visible');
+  modalBody.classList.add('overlay');
 });

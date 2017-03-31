@@ -167,8 +167,9 @@
     }
 
     &--basket {
-      width: 264px;
+      width: 182px;
       padding-right: 50px;
+      padding-left: 82px;
       justify-content: flex-end;
       background-color: $menu-background;
       border-bottom: 1px solid $menu-border;
@@ -277,6 +278,7 @@
 
     &--basket {
       width: 266px;
+      padding-left: 0;
     }
   }
 }

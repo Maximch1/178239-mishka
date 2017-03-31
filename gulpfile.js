@@ -22,7 +22,7 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 2 versions"
+        "last 5 versions"
       ]}),
       mqpacker({
         sort: true
@@ -88,7 +88,7 @@ gulp.task("build", function (fn) {
     "clean",
     "copy",
     "style",
-    "images",
+    // "images",
     "symbols",
     fn);
 });

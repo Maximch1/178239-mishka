@@ -33,6 +33,23 @@
   }
 }
 
+.social__link-icon {
+  &--insta {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 24px;
+    height: 20px;
+  }
+}
+
 
 @media #{$tablet-widths} {
   .social {

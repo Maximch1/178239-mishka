@@ -24,6 +24,15 @@ a {
 
 a:active, a:hover {
   outline-width: 0;
+  transition: all 0.2s ease;
+}
+
+input:hover,
+textarea:hover,
+button:hover,
+label:hover::before,
+svg:hover {
+  transition: all 0.2s ease;
 }
 
 picture {

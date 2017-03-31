@@ -2,7 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  margin-bottom: 215px;
+  padding-bottom: 215px;
 }
 
 .order__desc {
@@ -232,7 +232,7 @@
 
   .order {
     padding-top: 60px;
-    margin-bottom: 193px;
+    padding-bottom: 193px;
   }
 
   .order__desc {
@@ -352,7 +352,6 @@
       left: 12px;
     }
   }
-
 
   .order__group--type .order__block {
     width: 334px;

@@ -1,9 +1,12 @@
 .process {
+  padding-bottom: 218px;
+}
+.process__wrapper {
   @include container;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 218px;
+  //margin-bottom: 218px;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
@@ -83,9 +86,13 @@
 
 @media #{$tablet-widths} {
   .process {
+    padding-bottom: 206px;
+  }
+
+  .process__wrapper {
     width: 668px;
     padding: 0;
-    margin-bottom: 206px;
+    //margin-bottom: 206px;
   }
 
   .process__video {
@@ -126,10 +133,14 @@
 
 @media #{$desktop-widths} {
   .process {
+    padding-bottom: 248px;
+  }
+
+  .process__wrapper {
     width: 1050px;
     height: 455px;
     flex-wrap: wrap;
-    margin-bottom: 248px;
+    //margin-bottom: 248px;
     padding: 0;
   }
 
