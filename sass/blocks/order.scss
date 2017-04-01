@@ -104,6 +104,7 @@
 
 .order__type-desc {
   padding: 12px 0 12px 62px;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -130,6 +131,7 @@
 .order__color-desc {
   padding: 22px 0 21px 62px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: '';
