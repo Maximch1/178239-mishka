@@ -1,5 +1,6 @@
 .overlay {
-  &:before {
+
+  &::before {
     content: '';
     display: block;
     position: fixed;

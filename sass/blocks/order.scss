@@ -6,7 +6,7 @@
 }
 
 .order__desc {
-  @include font-sans(13px,24px);
+  @include font-sans(13px, 24px);
   margin-bottom: 24px;
   padding: 0 30px;
 }
@@ -18,51 +18,58 @@
   position: relative;
 
   &--type {
-    padding: 37px 30px 31px;
+    padding: 0px 30px 32px;
   }
 
   &--color {
-    padding: 32px 30px 20px;
+    padding: 0px 30px 21px;
   }
 
   &--name {
-    padding: 46px 30px 33px;
+    padding: 0px 30px 33px;
   }
 
   &--tel {
-    padding: 24px 30px 32px;
+    padding: 0px 30px 32px;
   }
 
   &--mail {
-    padding: 24px 30px 31px;
+    padding: 0px 30px 32px;
   }
 
   &--additional {
-    padding: 42px 30px 16px;
+    padding: 0px 30px 16px;
   }
 }
 
 .order__title {
-  @include font-sans-bold(17px,16px,$order-title-color);
+  @include font-sans-bold(17px, 16px, $order-title-color);
   text-transform: uppercase;
-  position: absolute;
-  top: 0;
 
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     width: 198px;
     height: 1px;
     background-color: $order-title-color;
-    left: 60px;
+    left: 92px;
     top: 8px;
   }
-  &--name {
+
+  &--type {
     margin-bottom: 22px;
   }
 
+  &--color {
+    margin-bottom: 14px;
+  }
+
+  &--name {
+    margin-bottom: 30px;
+  }
+
   &--tel {
-    margin-bottom: 3px;
+    margin-bottom: 8px;
   }
 
   &--additional {
@@ -70,9 +77,11 @@
   }
 
   &--mail {
-    &:before {
+    margin-bottom: 8px;
+
+    &::before {
       width: 179px;
-      left: 82px;
+      left: 110px;
     }
   }
 }
@@ -98,7 +107,7 @@
 
 .order__type-desc,
 .order__color-desc {
-  @include font-sans-bold(17px,18px);
+  @include font-sans-bold(17px, 18px);
   display: block;
 }
 
@@ -156,6 +165,7 @@
 }
 
 .order__block input[type="radio"]:checked + .order__type-desc {
+
   &::after {
     content: '';
     width: 16px;
@@ -170,6 +180,7 @@
 }
 
 .order__block input[type="checkbox"]:checked + .order__color-desc {
+
   &::after {
     content: '';
     width: 19px;
@@ -193,7 +204,7 @@
 
 .order__input {
   display: block;
-  @include font-sans-bold(17px,18px);
+  @include font-sans-bold(17px, 18px);
 }
 
 .order__input-text {
@@ -202,7 +213,7 @@
   border: none;
   border-bottom: 2px solid $order-text-bottom;
   outline: none;
-  @include font-sans(17px,18px);
+  @include font-sans(17px, 18px);
 
   &--textarea {
     width: 260px;
@@ -220,26 +231,56 @@
   &:focus {
     border-color: $order-border-hover;
   }
+
+  &:hover + .order__icon-phone {
+    fill: $order-border-hover;
+  }
+
+  &:hover + .order__icon-mail {
+    fill: $order-border-hover;
+  }
+
+  &:focus + .order__icon-phone {
+    fill: $order-border-hover;
+  }
+
+  &:focus + .order__icon-mail {
+    fill: $order-border-hover;
+  }
 }
 
 .order__more {
-  @include font-sans(14px,16px);
-  margin-bottom: 31px;
+  @include font-sans(14px, 16px);
+  margin-bottom: 32px;
 }
 
+.order__icon-phone {
+  position: absolute;
+  right: 8px;
+  bottom: 16px;
+  width: 25px;
+  height: 24px;
+  fill: $order-icon-color;
+}
 
-
+.order__icon-mail {
+  position: absolute;
+  right: 4px;
+  bottom: 9px;
+  width: 32px;
+  height: 32px;
+  fill: $order-icon-color;
+}
 
 @media #{$tablet-widths} {
-
   .order {
     padding-top: 60px;
     padding-bottom: 193px;
   }
 
   .order__desc {
-    @include font-sans(17px,30px);
-    margin-bottom: 5px;
+    @include font-sans(17px, 30px);
+    margin-bottom: 6px;
     padding: 0 50px;
   }
 
@@ -281,17 +322,28 @@
     &--additional {
       height: 246px;
     }
+
+    &--btn {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      align-items: center;
+    }
   }
 
   .order__title {
     width: 167px;
     flex-basis: 100%;
-    padding-top: 68px;
+    padding-top: 66px;
     position: relative;
     margin: 0;
 
     &::before {
       display: none;
+    }
+
+    &--mail {
+      padding-top: 28px;
     }
   }
 
@@ -306,16 +358,17 @@
       align-items: center;
       margin: 0;
       width: 500px;
+      padding-bottom: 4px;
+      height: 72px;
     }
 
     &--additional {
       width: 500px;
     }
-
   }
 
   .order__type-desc {
-    @include font-sans-bold(19px,18px);
+    @include font-sans-bold(19px, 18px);
     padding-left: 80px;
 
     &::before {
@@ -326,7 +379,7 @@
   }
 
   .order__color-desc {
-    @include font-sans-bold(19px,18px);
+    @include font-sans-bold(19px, 18px);
     padding-left: 80px;
     padding-top: 18px;
 
@@ -335,10 +388,10 @@
       height: 48px;
       top: 3px;
     }
-
   }
 
   .order__block input[type="radio"]:checked + .order__type-desc {
+
     &::after {
       top: 27px;
       width: 22px;
@@ -348,6 +401,7 @@
   }
 
   .order__block input[type="checkbox"]:checked + .order__color-desc {
+
     &::after {
       width: 27px;
       height: 14px;
@@ -367,17 +421,20 @@
   }
 
   .order__input {
-    @include font-sans-bold(19px,18px);
+    @include font-sans-bold(19px, 18px);
     padding-right: 24px;
   }
 
   .order__input-text {
-    @include font-sans(19px,18px);
+    @include font-sans(19px, 18px);
     padding-left: 18px;
+    min-height: 50px;
 
     &--textarea {
-      padding-top: 12px;
+      padding-top: 13px;
       padding-left: 14px;
+      min-height: 142px;
+      margin-bottom: 4px;
     }
   }
 
@@ -392,50 +449,54 @@
     height: 228px;
   }
 
-  .order__title--mail {
-    padding-top: 30px;
-  }
-
   .order__input-text {
     width: 100%;
     resize: none;
   }
 
-  .order__group--btn {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-  }
-
   .order__more {
     display: block;
-    @include font-sans(17px,30px);
+    @include font-sans(17px, 30px);
     text-align: center;
     order: 1;
-    margin: 0;
+    margin: 0 0 6px 0;
   }
 
   .order__btn {
     width: 230px;
   }
+
+  .order__icon-phone {
+    top: 23px;
+    right: 25px;
+  }
+
+  .order__icon-mail {
+    top: 23px;
+    right: 21px;
+  }
 }
-
-
 
 @media #{$desktop-widths} {
   .order {
     padding-top: 104px;
+    padding-bottom: 193px;
   }
+
   .order__desc {
     padding: 0 225px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   .order__title {
     width: 175px;
     padding-left: 62px;
+    padding-top: 68px;
     box-sizing: border-box;
+
+    &--mail {
+      padding-top: 32px;
+    }
   }
 
   .order__group-color {
@@ -443,12 +504,17 @@
   }
 
   .order__group {
+
     &--color {
       height: 228px;
     }
 
     &--additional {
       height: 240px;
+    }
+
+    &--btn {
+      padding: 0 225px;
     }
   }
 
@@ -465,7 +531,21 @@
     }
   }
 
-  .order__group--btn {
-    padding: 0 225px;
+  .order__input-text--textarea {
+    margin-bottom: 0;
+  }
+
+  .order__more {
+    margin: 0;
+  }
+
+  .order__icon-phone {
+    top: 23px;
+    right: 8px;
+  }
+
+  .order__icon-mail {
+    top: 23px;
+    right: 4px;
   }
 }

@@ -141,7 +141,6 @@
                 <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
               </a>
             <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
-
             <div class="catalog-item__price">
               <span class="catalog-item__cost">1 200 руб.</span>
               <a href="order.html" class="catalog-item__link">
@@ -152,8 +151,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="catalog-item">
           <a href="product_2.html" class="catalog-item__pic">
             <picture>
@@ -167,7 +164,6 @@
               <h3 class="catalog-item__title">Корзинка для белья</h3>
             </a>
             <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
-
             <div class="catalog-item__price">
               <span class="catalog-item__cost">690 руб.</span>
               <a href="order.html" class="catalog-item__link">
@@ -178,8 +174,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="catalog-item">
           <a href="product_3.html" class="catalog-item__pic">
             <picture>
@@ -193,7 +187,6 @@
               <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
             </a>
             <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
-
             <div class="catalog-item__price">
               <span class="catalog-item__cost">1 500 руб.</span>
               <a href="order.html" class="catalog-item__link">
@@ -219,7 +212,7 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="process__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Большая корзинка для игрушек">
             </picture>
-            <button class="process__btn-play"></button>
+            <button class="process__btn-play" type="button"></button>
           </div>
           <div class="process__footer">
             <p class="process__desc">
@@ -271,11 +264,11 @@
         <form class="modal__form">
           <span class="modal__desc">Выберите размер:</span>
           <div class="modal__list">
-            <input type="radio" id="modal-size-s" class="modal__item" name="size">
+            <input type="radio" id="modal-size-s" class="modal__item" name="size" value="s">
             <label for="modal-size-s" class="modal__size-btn">s</label>
-            <input type="radio" id="modal-size-m" class="modal__item" name="size">
+            <input type="radio" id="modal-size-m" class="modal__item" name="size" value="m">
             <label for="modal-size-m" class="modal__size-btn">m</label>
-            <input type="radio" id="modal-size-l" class="modal__item" name="size">
+            <input type="radio" id="modal-size-l" class="modal__item" name="size" value="l">
             <label for="modal-size-l" class="modal__size-btn">l</label>
           </div>
           <button class="btn modal__add-btn" type="submit">Добавить</button>

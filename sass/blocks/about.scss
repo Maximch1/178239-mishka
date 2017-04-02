@@ -3,11 +3,11 @@
   display: flex;
   flex-direction: column;
   padding: 27px 30px 0;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 }
 
 .about__title {
-  @include font-sans-bold(25px,30px);
+  @include font-sans-bold(25px, 30px);
   padding-bottom: 3px;
 }
 
@@ -22,34 +22,39 @@
   &--1 {
     background: transparent url("../img/icon-feature-1.svg") no-repeat 8px 30px;
   }
+
   &--2 {
     background: transparent url("../img/icon-feature-3.svg") no-repeat 0 30px;
   }
+
   &--3 {
     background: transparent url("../img/icon-feature-5.svg") no-repeat 9px 35px;
   }
+
   &--4 {
     background: transparent url("../img/icon-feature-2.svg") no-repeat 3px 33px;
   }
+
   &--5 {
     background: transparent url("../img/icon-feature-4.svg") no-repeat -4px 34px;
   }
+
   &--6 {
     background: transparent url("../img/icon-feature-6.svg") no-repeat 4px 32px;
   }
 }
 
 @media #{$tablet-widths} {
-
   .about {
     padding: 0 50px;
-    margin-top: 50px;
+    margin: 50px auto 39px;
   }
 
   .about__title {
-    @include font-sans-bold(43px,50px);
+    @include font-sans-bold(43px, 50px);
     padding: 0;
     margin-left: -5px;
+    margin-bottom: 8px;
   }
 
   .about__features {
@@ -59,36 +64,41 @@
   }
 
   .about__item {
-    @include font-sans-bold(20px,24px);
+    @include font-sans-bold(20px, 24px);
     width: 50%;
-    padding-top: 104px;
+    padding-top: 93px;
+    padding-bottom: 14px;
     width: 294px;
     margin-right: auto;
 
     &--1 {
       order: 1;
-      background-position: 8px 48px;
+      background-position: 8px 42px;
     }
+
     &--2 {
       order: 3;
-      background-position: 0px 52px;
+      background-position: 0px 44px;
     }
+
     &--3 {
       order: 5;
-      background-position: 8px 60px;
+      background-position: 8px 48px;
     }
+
     &--4 {
       order: 2;
-      background-position: 3px 52px;
-
+      background-position: 2px 45px;
     }
+
     &--5 {
       order: 4;
-      background-position: 0px 56px;
+      background-position: 0px 46px;
     }
+
     &--6 {
       order: 6;
-      background-position: 3px 57px;
+      background-position: 2px 45px;
     }
   }
 
@@ -98,16 +108,14 @@
   }
 }
 
-
 @media #{$desktop-widths} {
   .about {
     @include container;
-    margin-top: 60px;
+    margin-top: 62px;
     padding: 0 225px;
   }
 
-
   .about__title {
-    @include font-sans-bold(53px,57px);
+    @include font-sans-bold(53px, 57px);
   }
 }

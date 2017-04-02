@@ -18,9 +18,6 @@
   display: none;
 }
 
-
-
-
 @media #{$tablet-widths} {
   .page-footer {
     flex-direction: row;
@@ -31,7 +28,6 @@
     width: 668px;
     flex-direction: row;
     justify-content: space-between;
-    //padding-bottom: 6px;
   }
 
   .page-footer__icon {
@@ -65,9 +61,4 @@
   .page-footer__logo {
     flex-grow: 0.11;
   }
-
-  .copyright__icon {
-    padding-top: 10px;
-  }
-
 }

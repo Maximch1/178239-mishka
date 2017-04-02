@@ -1,12 +1,12 @@
 .process {
   padding-bottom: 218px;
 }
+
 .process__wrapper {
   @include container;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
-  //margin-bottom: 218px;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
@@ -25,7 +25,7 @@
 }
 
 .process__title {
-  @include font-sans-bold(17px,24px);
+  @include font-sans-bold(17px, 24px);
 }
 
 .process__img {
@@ -70,7 +70,7 @@
 }
 
 .process__desc {
-  @include font-sans(13px,24px,$process-color);
+  @include font-sans(13px, 24px, $process-color);
   margin-bottom: 25px;
 }
 
@@ -83,7 +83,6 @@
   fill: $process-icon-color;
 }
 
-
 @media #{$tablet-widths} {
   .process {
     padding-bottom: 206px;
@@ -92,7 +91,6 @@
   .process__wrapper {
     width: 668px;
     padding: 0;
-    //margin-bottom: 206px;
   }
 
   .process__video {
@@ -100,7 +98,7 @@
   }
 
   .process__title {
-    @include font-sans-bold(20px,24px);
+    @include font-sans-bold(20px, 24px);
   }
 
   .process__header {
@@ -125,11 +123,10 @@
   }
 
   .process__desc {
-    @include font-sans(15px,30px);
+    @include font-sans(15px, 30px);
     margin-bottom: 35px;
   }
 }
-
 
 @media #{$desktop-widths} {
   .process {
@@ -140,7 +137,6 @@
     width: 1050px;
     height: 455px;
     flex-wrap: wrap;
-    //margin-bottom: 248px;
     padding: 0;
   }
 
@@ -151,7 +147,7 @@
 
   .process__header {
     width: 367px;
-    padding: 96px 100px 30px 77px;
+    padding: 94px 100px 33px 77px;
     box-sizing: border-box;
     border-bottom: none;
   }
@@ -167,7 +163,7 @@
   }
 
   .process__desc {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
     overflow: auto;
     height: 120px;
   }

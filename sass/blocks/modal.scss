@@ -14,7 +14,6 @@
   background-color: $modal-background;
   border: 1px solid $silver-color;
 
-
   &--visible {
     display: block;
   }
@@ -26,7 +25,7 @@
 }
 
 .modal__header {
-  @include font-sans-bold(25px,30px);
+  @include font-sans-bold(25px, 30px);
   text-transform: uppercase;
   margin: 30px auto 12px;
   width: 148px;
@@ -34,7 +33,7 @@
 }
 
 .modal__desc {
-  @include font-sans(15px,30px);
+  @include font-sans(15px, 30px);
   margin: 0 auto 23px;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .modal__size-btn {
-  @include font-sans-bold(17px,16px);
+  @include font-sans-bold(17px, 16px);
   text-align: center;
   width: 78px;
   height: 32px;
@@ -74,7 +73,6 @@
   border-color: $modal-btn-color;
 }
 
-
 @media #{$tablet-widths} {
   .modal {
     width: 568px;
@@ -85,13 +83,13 @@
   }
 
   .modal__header {
-    @include font-sans-bold(30px,57px);
+    @include font-sans-bold(30px, 57px);
     width: auto;
     margin: 33px auto 14px;
   }
 
   .modal__desc {
-    @include font-sans(17px,30px);
+    @include font-sans(17px, 30px);
     margin: 0 auto 21px;
   }
 

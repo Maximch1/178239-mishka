@@ -12,14 +12,12 @@
 .page-header__logo {
   position: relative;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   min-height: 79px;
   border-bottom: 1px solid $pheader-logo;
   background-color: $pheader-logo-background;
 }
-
-
 
 @media #{$mobile-widths-only} {
   .page-header {
@@ -27,6 +25,7 @@
   }
 
   .page-header__wrapper {
+
     &--js {
       position: absolute;
       left: 50%;

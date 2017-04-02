@@ -2,8 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  //padding-bottom: 200px;
-  padding: 35px 0 200px;
+  padding: 36px 0 200px;
 }
 
 .contact__btn {
@@ -17,13 +16,13 @@
 }
 
 .contacts__title {
-  @include font-sans-bold(18px,30px);
+  @include font-sans-bold(18px, 30px);
   margin-bottom: 25px;
 }
 
 .contacts__table {
   display: table;
-  @include font-sans(15px,30px,$contacts-table);
+  @include font-sans(15px, 30px, $contacts-table);
   border-collapse: collapse;
   margin-bottom: 37px;
 }
@@ -34,6 +33,7 @@
 
 .contacts__table li {
   display: table-cell;
+
   &:first-child {
     width: 78px;
     height: 58px;
@@ -43,7 +43,7 @@
 }
 
 .contacts__email {
-  @include font-sans(15px,30px);
+  @include font-sans(15px, 30px);
   color: $contacts-table;
   border-bottom: 1px solid $contacts-email;
   padding-bottom: 5px;
@@ -65,7 +65,6 @@
   margin-bottom: 39px;
   position: relative;
 
-
   &::after {
     content: '';
     position: absolute;
@@ -76,11 +75,12 @@
     background-image: url("../img/icon-map-pin.svg");
     z-index: 1;
   }
-}
 
-.contact__map--js {
-  &::after {
-    display: none;
+  &--js {
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -97,20 +97,19 @@
   }
 }
 
-
 @media #{$tablet-widths} {
   .contacts {
-    padding-top: 62px;
+    padding-top: 60px;
     background: url("../img/icon-flag.svg") no-repeat right 53px top 46px;
   }
 
   .contacts__wrapper {
     padding: 0 50px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .contacts__title {
-    @include font-sans-bold(43px,50px);
+    @include font-sans-bold(43px, 50px);
     margin-bottom: 48px;
     margin-left: -5px;
   }
@@ -118,8 +117,8 @@
   .contacts__table {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    @include font-sans(17px,30px);
+    justify-content: space-between;
+    @include font-sans(17px, 30px);
     margin-bottom: 8px;
   }
 
@@ -129,7 +128,7 @@
 
   .contacts__table li,
   .contacts__table a {
-    @include font-sans(17px,30px);
+    @include font-sans(17px, 30px);
   }
 
   .contacts__table li {
@@ -169,7 +168,6 @@
   }
 }
 
-
 @media #{$desktop-widths} {
   .contacts {
     flex-direction: row;
@@ -178,7 +176,7 @@
     justify-content: flex-end;
     margin-top: 71px;
     margin-bottom: 0;
-    background-position: left 113px top 60px;
+    background-position: left 113px top 62px;
   }
 
   .contacts__wrapper {
@@ -209,7 +207,6 @@
     position: relative;
     width: 525px;
     height: 457px;
-    //margin-bottom: 0;
     background: url("../img/map-desktop@1x.jpg") no-repeat center;
 
     @media #{$retina} {
@@ -223,10 +220,12 @@
   }
 
   .contacts__title {
-    @include font-sans-bold(53px,57px);
+    @include font-sans-bold(53px, 57px);
+    margin-bottom: 48px;
   }
 
   .contact__map {
+    margin-bottom: 55px;
 
     &::after {
       left: 237px;

@@ -34,6 +34,7 @@
 }
 
 .social__link-icon {
+
   &--insta {
     width: 22px;
     height: 21px;
@@ -50,7 +51,6 @@
   }
 }
 
-
 @media #{$tablet-widths} {
   .social {
     border: none;
@@ -59,6 +59,7 @@
   }
 
   .social__link {
+
     &--insta {
       padding-top: 6px;
     }

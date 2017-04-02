@@ -10,6 +10,7 @@ var menuButton = document.querySelector('.menu__button');
 page.classList.add('page-header__wrapper--js');
 menu1.classList.add('menu__catalog--js');
 menu2.classList.add('menu__search--js');
+menuButton.classList.add('menu__button--js');
 
 menuButton.addEventListener('click', function () {
   menu1.classList.toggle('menu__catalog--js');
@@ -30,3 +31,5 @@ modalButton.addEventListener('click', function (event) {
   modalWindow.classList.add('modal--visible');
   modalBody.classList.add('overlay');
 });
+
+

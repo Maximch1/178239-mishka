@@ -15,7 +15,7 @@ $morning-glory-color: #97e2d2;
 $puerto-rico-color: #46c1ae;
 $seashell-color: #f1f1f1;
 $silver-chalice-color: #b2b2b2;
-$silver-color: #C7C7C7;
+$silver-color: #c7c7c7;
 $tundora-color: #444444;
 $thunder-color: #231f20;
 $white-color: #ffffff;
@@ -45,6 +45,8 @@ $menu-icon-fill: $silver-color;
 $products-background-color: $alabaster-color;
 $prod-interior-background-color: $downy-color;
 $prod-toys-background-color: $fountain-blue-color;
+$prod-interior-hover: $viking-color;
+$prod-toys-hover: $puerto-rico-color;
 
 //products-view
 $prod-view-subtitle-color: $downy-color;
@@ -110,6 +112,7 @@ $order-input-out-border: $tundora-color;
 $order-input-in-border: $downy-color;
 $order-border-hover: $downy-color;
 $order-border-active: $tundora-color;
+$order-icon-color: $silver-color;
 
 //modal
 $modal-background: $white-color;
