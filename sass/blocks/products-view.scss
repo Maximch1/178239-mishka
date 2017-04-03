@@ -47,12 +47,13 @@
   margin-bottom: 26px;
 }
 
-.products-view__table ul {
+.products-view__table dl {
   display: table-row;
   border-bottom: 1px solid $prod-view-table;
 }
 
-.products-view__table li {
+.products-view__table dt,
+.products-view__table dd {
   display: table-cell;
   padding: 9px 0 12px;
 

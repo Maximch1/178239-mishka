@@ -24,12 +24,16 @@ menuButton.addEventListener('click', function () {
 // Вызов modal окна
 var modalWindow = document.querySelector('.modal');
 var modalBody = document.querySelector('body');
-var modalButton = document.querySelector('.product-view__btn');
+var modalButton1 = document.querySelector('.product-view__btn');
+var modalButton2 = document.querySelector('.catalog-item__link');
 
-modalButton.addEventListener('click', function (event) {
+var togglePopup = function (event) {
   event.preventDefault();
   modalWindow.classList.add('modal--visible');
   modalBody.classList.add('overlay');
-});
-
+};
+if (modalButton1 !== null){
+  modalButton1.addEventListener('click', togglePopup);}
+if (modalButton2 !== null){
+  modalButton2.addEventListener('click', togglePopup);}
 

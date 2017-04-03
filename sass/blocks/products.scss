@@ -52,7 +52,7 @@
   width: 10px;
   color: $white-color;
   @include font-sans-bold(19px, 24px);
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 .products__icon {

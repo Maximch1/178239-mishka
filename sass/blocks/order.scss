@@ -2,7 +2,6 @@
   @include container;
   display: flex;
   flex-direction: column;
-  padding-bottom: 215px;
 }
 
 .order__desc {
@@ -275,7 +274,6 @@
 @media #{$tablet-widths} {
   .order {
     padding-top: 60px;
-    padding-bottom: 193px;
   }
 
   .order__desc {
@@ -304,7 +302,7 @@
     }
 
     &--name {
-      height: 304px;
+      height: 306px;
     }
 
     &--tel {
@@ -320,7 +318,7 @@
     }
 
     &--additional {
-      height: 246px;
+      height: 244px;
     }
 
     &--btn {
@@ -334,7 +332,7 @@
   .order__title {
     width: 167px;
     flex-basis: 100%;
-    padding-top: 66px;
+    padding-top: 68px;
     position: relative;
     margin: 0;
 
@@ -480,7 +478,6 @@
 @media #{$desktop-widths} {
   .order {
     padding-top: 104px;
-    padding-bottom: 193px;
   }
 
   .order__desc {
@@ -491,11 +488,11 @@
   .order__title {
     width: 175px;
     padding-left: 62px;
-    padding-top: 68px;
+    padding-top: 67px;
     box-sizing: border-box;
 
     &--mail {
-      padding-top: 32px;
+      padding-top: 30px;
     }
   }
 
@@ -510,7 +507,7 @@
     }
 
     &--additional {
-      height: 240px;
+      height: 238px;
     }
 
     &--btn {

@@ -1,8 +1,8 @@
 function initialize() {
   var x = 59.936379;
   var y = 30.321495;
-  var conMap = document.querySelector('.contact__map');
-  conMap.classList.add('contact__map--js');
+  var conMap = document.querySelector('.contacts__map');
+  conMap.classList.add('contacts__map--js');
 
   var mapOptions = {
     zoom: 16,
@@ -12,7 +12,7 @@ function initialize() {
   }
 
   var map = new  google.maps.Map(
-    document.querySelector('.contact__map'),
+    document.querySelector('.contacts__map'),
     mapOptions
   );
 

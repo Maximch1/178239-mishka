@@ -2,14 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 31px;
-
-  &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.10);
-  }
 }
 
 .catalog-item__img {
@@ -87,6 +79,14 @@
     flex-direction: row;
     width: 668px;
     margin-bottom: 54px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,.10);
+    }
   }
 
   .catalog-item__img {
