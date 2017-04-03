@@ -36,4 +36,3 @@ if (modalButton1 !== null){
   modalButton1.addEventListener('click', togglePopup);}
 if (modalButton2 !== null){
   modalButton2.addEventListener('click', togglePopup);}
-
