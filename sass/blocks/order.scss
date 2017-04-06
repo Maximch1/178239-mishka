@@ -25,15 +25,15 @@
   }
 
   &--name {
-    padding: 0px 30px 33px;
+    padding: 0px 28px 33px;
   }
 
   &--tel {
-    padding: 0px 30px 33px;
+    padding: 0px 28px 33px;
   }
 
   &--mail {
-    padding: 0px 30px 33px;
+    padding: 0px 28px 33px;
   }
 
   &--additional {
@@ -419,7 +419,7 @@
 
   .order__input {
     @include font-sans-bold(19px, 18px);
-    padding-right: 24px;
+    padding-right: 26px;
   }
 
   .order__input-text {
