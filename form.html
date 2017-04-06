@@ -68,73 +68,74 @@
       </symbol>
     </svg>
     <header class="page-header page-header--black">
-      <h1 class="visually-hidden">HTML Academy: Мишка</h1>
-      <nav class="menu page-header__wrapper page-header__wrapper--black">
-        <div class="page-header__logo">
-          <a href="index.html">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg"  alt="Логотип Мишка" class="logo__img" width="86" height="35">
-            </picture>
-          </a>
-          <button class="menu__button" type="button">открыть_меню</button>
-        </div>
-        <div class="menu__catalog">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--cat">
-              <a href="catalog.html" class="menu__link">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="menu__item menu__item--order">
-              <a class="menu__link">
-                Вязание на заказ
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__search">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--search">
-              <a href="search.html" class="menu__link">
-                Поиск по сайту
-                <svg class="menu__search-icon" width="18" height="18">
-                  <use xlink:href="#icon-search"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu__item menu__item--basket">
-              <a href="cart.html" class="menu__link">
-                Корзина: пока пуста
-                <svg class="menu__basket-icon" width="21" height="18">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__sale">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--new">
-              <a href="new.html" class="menu__link">
-                Новые поступления
-              </a>
-            </li>
-            <li class="menu__item menu__item--sale">
-              <a href="sale.html" class="menu__link">
-                Распродажа
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__text">Бесплатная доставка по России</div>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="menu menu--black">
+          <div class="page-header__logo logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="logo__img" width="86" height="35">
+              </picture>
+            </a>
+            <button class="menu__button" type="button">открыть_меню</button>
+          </div>
+          <div class="menu__catalog">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--cat">
+                <a href="catalog.html" class="menu__link">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="menu__item menu__item--order">
+                <a class="menu__link">
+                  Вязание на заказ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__search">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--search">
+                <a href="search.html" class="menu__link">
+                  Поиск по сайту
+                  <svg class="menu__search-icon" width="18" height="18">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__item menu__item--basket">
+                <a href="cart.html" class="menu__link">
+                  Корзина: пока пуста
+                  <svg class="menu__basket-icon" width="21" height="18">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__sale">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--new">
+                <a href="new.html" class="menu__link">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="menu__item menu__item--sale">
+                <a href="sale.html" class="menu__link">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__text">Бесплатная доставка по России</div>
+      </div>
     </header>
     <main class="page-content page-content--form">
       <section class="subject">
         <div class="subject__wrapper">
-          <h2 class="subject__title">Вязание на заказ</h2>
+          <h1 class="subject__title">Вязание на заказ</h1>
         </div>
       </section>
       <div class="order">
@@ -144,7 +145,7 @@
         </p>
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="order__group order__group--type">
-            <p class="order__title order__title--type">Тип</p>
+            <h4 class="order__title order__title--type">Тип</h4>
             <div class="order__block">
               <input type="radio" name="order-type" id="order-type_1" value="accessory" checked>
               <label class="order__type-desc" for="order-type_1">Аксессуар для интерьера</label>
@@ -155,7 +156,7 @@
             </div>
           </div>
           <div class="order__group order__group--color">
-            <p class="order__title order__title--color">Цвет</p>
+            <h4 class="order__title order__title--color">Цвет</h4>
             <div class="order__group-color">
               <div class="order__block">
                 <input type="checkbox" name="order-color-white" id="order-color_1" value="white" checked>
@@ -184,7 +185,7 @@
             </div>
           </div>
           <div class="order__group order__group--name">
-            <p class="order__title order__title--name">ФИО</p>
+            <h4 class="order__title order__title--name">ФИО</h4>
             <div class="order__block order__block--name">
               <label class="order__input" for="order-name">Имя:</label>
               <input class="order__input-text" type="text" name="order-name" id="order-name" placeholder="Введите ваше имя*">
@@ -200,7 +201,7 @@
           </div>
           <div class="order__group-contacts">
             <div class="order__group order__group--tel">
-              <p class="order__title order__title--tel">Тел</p>
+              <h4 class="order__title order__title--tel">Тел</h4>
               <div class="order__block order__block--tel">
                 <label class="order__input visually-hidden" for="order-tel">Телефон:</label>
                 <input class="order__input-text" type="tel" name="order-tel" id="order-tel" placeholder="+7 ХХХ ХХ ХХ*">
@@ -210,7 +211,7 @@
               </div>
             </div>
             <div class="order__group order__group--mail">
-              <p class="order__title order__title--mail">E-mail</p>
+              <h4 class="order__title order__title--mail">E-mail</h4>
               <div class="order__block order__block--mail">
                 <label class="order__input visually-hidden" for="order-mail">E-mail:</label>
                 <input class="order__input-text" type="email" name="order-mail" id="order-mail" placeholder="Ваш Email*">
@@ -221,7 +222,7 @@
             </div>
           </div>
           <div class="order__group order__group--additional">
-            <p class="order__title order__title--additional">Доп</p>
+            <h4 class="order__title order__title--additional">Доп</h4>
             <div class="order__block order__block--additional">
               <label class="order__additional visually-hidden" for="order-additional">Доп:</label>
               <textarea class="order__input-text order__input-text--textarea" name="order-additional" id="order-additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>

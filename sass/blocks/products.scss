@@ -8,7 +8,7 @@
 }
 
 .products__list {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -43,7 +43,7 @@
   padding: 25px 50px 30px 27px;
 
   &:active {
-    color: rgba(255,255,255,.3);
+    color: rgba(255, 255, 255, .3);
   }
 }
 
@@ -90,7 +90,7 @@
   .products {
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -155,7 +155,7 @@
   .products {
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;

@@ -2,7 +2,7 @@
   @include container;
   display: flex;
   flex-direction: column;
-  padding: 36px 0 0px;
+  padding: 37px 0 0px;
 }
 
 .contacts__btn {
@@ -12,7 +12,7 @@
 }
 
 .contacts__wrapper {
-  padding: 0 30px;
+  padding: 0 29px;
 }
 
 .contacts__title {
@@ -67,7 +67,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 67px;
     height: 100px;
@@ -101,7 +101,7 @@
 @media #{$tablet-widths} {
   .contacts {
     padding-top: 60px;
-    background: url("../img/icon-flag.svg") no-repeat right 53px top 46px;
+    background: url("../img/icon-flag.svg") no-repeat right 54px top 45px;
   }
 
   .contacts__wrapper {
@@ -138,11 +138,11 @@
   }
 
   .contacts__table dd {
-    width: 260px;
+    width: 262px;
   }
 
   .contacts__map {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     width: 768px;
     height: 457px;
     background: url("../img/map-tablet@1x.jpg") no-repeat center;
@@ -165,6 +165,12 @@
   .contacts__email {
     padding-bottom: 3px;
   }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .contacts {
+      padding-top: 57px;
+      background-position: right 53px top 42px;
+    }
+  }
 }
 
 @media #{$desktop-widths} {
@@ -173,7 +179,7 @@
     flex-wrap: wrap;
     padding: 0 50px 0 220px;
     justify-content: flex-end;
-    margin-top: 71px;
+    margin-top: 70px;
     margin-bottom: 0;
     background-position: left 113px top 62px;
     position: relative;

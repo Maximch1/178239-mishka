@@ -2,7 +2,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -34,7 +34,7 @@
 }
 
 .reviews__author {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .reviews__author-name {
@@ -94,7 +94,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    padding: 107px 50px 132px;
+    padding: 106px 50px 132px;
     margin-bottom: 0;
     background: url("../img/review@1x.jpg") no-repeat 0px 30px;
 
@@ -102,6 +102,10 @@
       background: url("../img/review@2x.jpg") no-repeat 0px 30px;
       background-size: 350px 457px;
     }
+  }
+
+  :-ms-lang(x), .reviews__wrapper {
+    padding-bottom: 126px;
   }
 
   .reviews__title {
@@ -115,12 +119,16 @@
     width: 175px;
     order: -1;
     align-self: flex-start;
-
+    margin-top: 2px;
   }
 
   .reviews__text {
     @include font-sans(17px, 30px);
-    margin-bottom: 34px;
+    margin-bottom: 31px;
+  }
+
+  _:-ms-lang(x), .reviews__text {
+    margin-bottom: 24px;
   }
 
   .reviews__author {
@@ -131,6 +139,7 @@
   .reviews__author-name {
     @include font-sans-bold(17px, 24px);
     margin: 0;
+    margin-bottom: 3px;
   }
 
   .reviews_controls {
@@ -140,6 +149,16 @@
   .reviews__control-btn {
     border: 0;
     width: 87px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .reviews__text {
+      margin-bottom: 22px;
+    }
+
+    .reviews__wrapper {
+      padding-bottom: 123px;
+    }
   }
 }
 
@@ -162,9 +181,17 @@
     }
   }
 
+  :-ms-lang(x), .reviews__wrapper {
+    padding-bottom: 180px;
+  }
+
   .reviews__title {
     margin: -10px 0 50px -5px;
     @include font-sans-bold(53px, 57px);
+  }
+
+  .reviews__btn {
+    margin-top: 0;
   }
 
   .reviews__content {
@@ -172,11 +199,25 @@
   }
 
   .reviews__text {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     padding-right: 100px;
+  }
+
+  _:-ms-lang(x), .reviews__text {
+    margin-bottom: 30px;
   }
 
   .reviews__author {
     margin-right: 463px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .reviews__wrapper {
+      padding-bottom: 175px;
+    }
+
+    .reviews__text {
+      margin-bottom: 27px;
+    }
   }
 }

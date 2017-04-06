@@ -29,11 +29,11 @@
   }
 
   &--tel {
-    padding: 0px 30px 32px;
+    padding: 0px 30px 33px;
   }
 
   &--mail {
-    padding: 0px 30px 32px;
+    padding: 0px 30px 33px;
   }
 
   &--additional {
@@ -46,7 +46,7 @@
   text-transform: uppercase;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 198px;
     height: 1px;
@@ -68,7 +68,7 @@
   }
 
   &--tel {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   &--additional {
@@ -115,7 +115,7 @@
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     border: 2px solid $order-input-out-border;
     border-radius: 50%;
     position: absolute;
@@ -142,7 +142,7 @@
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     border: 2px solid $order-input-out-border;
     width: 36px;
     height: 36px;
@@ -166,7 +166,7 @@
 .order__block input[type="radio"]:checked + .order__type-desc {
 
   &::after {
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
     background-color: $order-input-in-border;
@@ -181,7 +181,7 @@
 .order__block input[type="checkbox"]:checked + .order__color-desc {
 
   &::after {
-    content: '';
+    content: "";
     width: 19px;
     height: 9px;
     position: absolute;
@@ -200,7 +200,6 @@
   display: none;
 }
 
-
 .order__input {
   display: block;
   @include font-sans-bold(17px, 18px);
@@ -218,7 +217,7 @@
     width: 260px;
     min-height: 142px;
     border: 2px solid $order-textarea-border;
-    padding: 14px 25px 25px 17px;
+    padding: 14px 25px 25px 14px;
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -425,7 +424,7 @@
 
   .order__input-text {
     @include font-sans(19px, 18px);
-    padding-left: 18px;
+    padding-left: 16px;
     min-height: 50px;
 
     &--textarea {
@@ -473,6 +472,14 @@
     top: 23px;
     right: 21px;
   }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .order__block{
+      &--additional {
+        padding-bottom: 68px;
+      }
+    }
+  }
 }
 
 @media #{$desktop-widths} {
@@ -482,13 +489,13 @@
 
   .order__desc {
     padding: 0 225px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   .order__title {
     width: 175px;
     padding-left: 62px;
-    padding-top: 67px;
+    padding-top: 68px;
     box-sizing: border-box;
 
     &--mail {
@@ -507,12 +514,20 @@
     }
 
     &--additional {
-      height: 238px;
+      height: 240px;
     }
 
     &--btn {
       padding: 0 225px;
     }
+
+    &--type {
+      height: 226px;
+    }
+  }
+
+  .order__input {
+    padding-right: 26px;
   }
 
   .order__block {
@@ -528,12 +543,16 @@
     }
   }
 
+  .order__type-desc {
+    padding: 11px 0 13px 80px;
+  }
+
   .order__input-text--textarea {
     margin-bottom: 0;
   }
 
   .order__more {
-    margin: 0;
+    margin: 0 0 4px;
   }
 
   .order__icon-phone {

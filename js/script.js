@@ -3,11 +3,11 @@
  */
 
 //бутерброд
-var page = document.querySelector('.page-header__wrapper');
+var page = document.querySelector('.menu');
 var menu1 = document.querySelector('.menu__catalog');
 var menu2 = document.querySelector('.menu__search');
 var menuButton = document.querySelector('.menu__button');
-page.classList.add('page-header__wrapper--js');
+page.classList.add('menu--js');
 menu1.classList.add('menu__catalog--js');
 menu2.classList.add('menu__search--js');
 menuButton.classList.add('menu__button--js');

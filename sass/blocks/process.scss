@@ -7,8 +7,7 @@
 
 .process__header {
   border: 1px solid $process-border;
-  padding: 23px;
-  padding-left: 89px;
+  padding: 22px 23px 23px 89px;
   position: relative;
 }
 
@@ -31,7 +30,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: url("../img/icon-play.svg") no-repeat 50% 50%;
   width: 101px;
   height: 76px;
@@ -40,12 +39,12 @@
   border: none;
 
   &:hover {
-    transform: translate(-50%,-50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
     transition: all .2s;
   }
 
   &:active {
-    transform: translate(-50%,-50%) scale(.8);
+    transform: translate(-50%, -50%) scale(.8);
     opacity: .3;
   }
 }
@@ -78,11 +77,11 @@
     padding: 0;
 
     &:hover {
-      box-shadow: 0 6px 10px 0 rgba(0,0,0,.10);
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .10);
     }
 
     &:active {
-      box-shadow: 0 3px 5px 0 rgba(0,0,0,.10);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .10);
     }
   }
 
@@ -112,7 +111,7 @@
 
   .process__footer {
     border-top: none;
-    padding: 0 41px 45px;
+    padding: 0 40px 45px;
   }
 
   .process__desc {
@@ -148,11 +147,11 @@
   .process__footer {
     box-sizing: border-box;
     width: 367px;
-    padding: 0 58px 58px 77px;
+    padding: 0 58px 61px 77px;
   }
 
   .process__desc {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
     overflow: auto;
     height: 120px;
   }

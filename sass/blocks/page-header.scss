@@ -2,15 +2,15 @@
   flex: 1 0 auto;
 }
 
+.page-header__text {
+  display: none;
+}
+
 .page-header__wrapper {
-  @include container;
   display: flex;
   flex-direction: column;
-  background-color: $pheader-background;
-
-  &--black {
-    background-color: $pheader-background-black;
-  }
+  @include container;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
@@ -27,36 +27,34 @@
   .page-header {
     min-height: 80px;
   }
-
-  .page-header__wrapper {
-
-    &--js {
-      position: absolute;
-      left: 50%;
-      margin-left: -160px;
-    }
-  }
 }
 
 @media #{$tablet-widths} {
   .page-header {
-    background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f9f9f9 88px,#f9f9f9);
+    background: linear-gradient(to bottom, #fff 87px, #ececec 87px, #ececec 88px, #f9f9f9 88px, #f9f9f9);
 
     &--black {
-      background: linear-gradient(to bottom,#fff 87px,#ececec 87px,#ececec 88px,#f1f1f1 88px,#f1f1f1);
+      background: linear-gradient(to bottom, #fff 87px, #ececec 87px, #ececec 88px, #f1f1f1 88px, #f1f1f1);
     }
   }
 
   .page-header__wrapper {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    min-height: 148px;
   }
+
+  .page-header__text {
+    display: block;
+    padding-right: 50px;
+    text-align: right;
+    @include font-sans(15px, 24px);
+    align-self: flex-end;
+    margin-top: -42px;
+  }
+
   .page-header__logo {
-    width: 320px;
+    width: 323px;
     justify-content: flex-start;
-    padding-left: 50px;
+    padding-left: 47px;
     min-height: 87px;
     order: 1;
   }
@@ -69,5 +67,10 @@
     text-align: center;
     padding-left: 30px;
     flex-grow: 1;
+  }
+
+  .page-header__text {
+    padding-right: 52px;
+    margin-top: -44px;
   }
 }

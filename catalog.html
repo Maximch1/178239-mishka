@@ -58,73 +58,74 @@
       </symbol>
     </svg>
     <header class="page-header page-header--black">
-      <h1 class="visually-hidden">HTML Academy: Мишка</h1>
-      <nav class="menu page-header__wrapper page-header__wrapper--black">
-        <div class="page-header__logo logo">
-          <a href="index.html">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg"  alt="Логотип Мишка" class="logo__img" width="86" height="35">
-            </picture>
-          </a>
-          <button class="menu__button" type="button">открыть_меню</button>
-        </div>
-        <div class="menu__catalog">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--cat">
-              <a class="menu__link">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="menu__item menu__item--order">
-              <a href="form.html" class="menu__link">
-                Вязание на заказ
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__search">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--search">
-              <a href="search.html" class="menu__link">
-                Поиск по сайту
-                <svg class="menu__search-icon">
-                  <use xlink:href="#icon-search" width="18" height="18"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="menu__item menu__item--basket">
-              <a href="cart.html" class="menu__link">
-                Корзина: пока пуста
-                <svg class="menu__basket-icon">
-                  <use xlink:href="#icon-cart" width="21" height="18"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__sale">
-          <ul class="menu__items">
-            <li class="menu__item menu__item--new">
-              <a href="new.html" class="menu__link">
-                Новые поступления
-              </a>
-            </li>
-            <li class="menu__item menu__item--sale">
-              <a href="sale.html" class="menu__link">
-                Распродажа
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__text">Бесплатная доставка по России</div>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="menu menu--black">
+          <div class="page-header__logo logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="logo__img" width="86" height="35">
+              </picture>
+            </a>
+            <button class="menu__button" type="button">открыть_меню</button>
+          </div>
+          <div class="menu__catalog">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--cat">
+                <a class="menu__link">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="menu__item menu__item--order">
+                <a href="form.html" class="menu__link">
+                  Вязание на заказ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__search">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--search">
+                <a href="search.html" class="menu__link">
+                  Поиск по сайту
+                  <svg class="menu__search-icon" width="18" height="18">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__item menu__item--basket">
+                <a href="cart.html" class="menu__link">
+                  Корзина: пока пуста
+                  <svg class="menu__basket-icon" width="21" height="18">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__sale">
+            <ul class="menu__items">
+              <li class="menu__item menu__item--new">
+                <a href="new.html" class="menu__link">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="menu__item menu__item--sale">
+                <a href="sale.html" class="menu__link">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__text">Бесплатная доставка по России</div>
+      </div>
     </header>
     <main class="page-content page-content--catalog">
       <section class="subject">
         <div class="subject__wrapper">
-          <h2 class="subject__title">Каталог товаров</h2>
+          <h1 class="subject__title">Каталог товаров</h1>
         </div>
       </section>
       <section class="catalog">
@@ -184,7 +185,7 @@
           </a>
           <div class="catalog-item__box">
             <a href="product_3.html" class="catalog-item__name">
-              <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+              <h3 class="catalog-item__title">Большая корзинка для&nbsp;игрушек</h3>
             </a>
             <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__price">
